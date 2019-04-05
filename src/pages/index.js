@@ -1,48 +1,50 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react';
+import { Link, graphql } from 'gatsby';
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 class BlogIndex extends React.Component {
   render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+    const { data } = this.props;
+    const siteTitle = data.site.siteMetadata.title;
+    const posts = data.allMarkdownRemark.edges;
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
-        />
-        <Bio />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
+      <Layout location={this.props.location} title={siteTitle} current={null}>
+        <SEO title="All posts" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
+
+        {posts.map(({ node }, index) => {
+          const tagList = node.frontmatter.tags.map((tag, index) => <span key={index}>{tag}</span>);
+          const number = `00${index + 1}`.slice(-2);
+          const title = node.frontmatter.title || node.fields.slug;
           return (
-            <article key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+            <article key={node.fields.slug} className="p-post-item">
+              <Link className="p-post-item__link" to={node.fields.slug}>
+                <div className="p-post-item__index">{number}</div>
+                <div
+                  className="p-post-item__featured-image"
+                  style={{
+                    backgroundImage: `url(/featured/${node.frontmatter.featuredImage})`
+                  }}
+                />
+                <div className="p-post-item__content">
+                  <div>
+                    <h3>{title}</h3>
+                    <p>{node.frontmatter.excerpt}</p>
+                    <div className="c-tag-list">{tagList}</div>
+                  </div>
+                </div>
+              </Link>
             </article>
-          )
+          );
         })}
       </Layout>
-    )
+    );
   }
 }
 
-export default BlogIndex
+export default BlogIndex;
 
 export const pageQuery = graphql`
   query {
@@ -61,9 +63,12 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            tags
+            excerpt
+            featuredImage
           }
         }
       }
     }
   }
-`
+`;

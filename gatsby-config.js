@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `xx`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Web Design`,
+    author: `R Sakai`,
+    description: `Web Design`,
+    siteUrl: `https://x.netlify.com/`,
     social: {
-      twitter: `kylemathews`
+      twitter: ``
     }
   },
   plugins: [
@@ -44,8 +44,7 @@ module.exports = {
           },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-          
+          `gatsby-remark-smartypants`
         ]
       }
     },
@@ -67,8 +66,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`
+        display: `minimal-ui`
       }
     },
     `gatsby-plugin-offline`,
@@ -83,7 +81,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
-        postCssPlugins: [require("autoprefixer")()],
+        postCssPlugins: [require('autoprefixer')()],
         precision: 8 // SASS default: 5
       }
     }

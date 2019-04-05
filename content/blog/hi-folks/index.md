@@ -1,21 +1,26 @@
 ---
 title: New Beginnings
-date: "2015-05-28T22:40:32.169Z"
+date: '2015-05-28T22:40:32.169Z'
+excerpt: 'HTML形式で記述されており、ブラウザーで表示されるページのこと。'
+tags: ['基本', 'test']
+featuredImage: './profile-pic.jpg'
 ---
-HTML形式で記述されており、ブラウザーで表示されるページのこと。  
-複数のページが集まりWEBサイトとなる。  
+
+HTML 形式で記述されており、ブラウザーで表示されるページのこと。  
+複数のページが集まり WEB サイトとなる。
 
 Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named
 Duden flows by their place and supplies it with the necessary regelialia.
 
-[Longe and Paroleaaa](http://google.com){target="_blank" class="button is-primary"}
+[Longe and Paroleaaa](http://google.com){target="\_blank" class="button is-primary"}
 
-## WEBページの取得
+## WEB ページの取得
+
 {class="title"}
 
-ページは `ブラウザ` からURLを入力し、サーバーからデータを取得することで表示される。
+ページは `ブラウザ` から URL を入力し、サーバーからデータを取得することで表示される。
 
 ※ データを要求することをリクエスト返すことをレスポンスという
 ※ ブラウザ（クライアント）側をフロントエンド、サーバー側をバックエンドという。

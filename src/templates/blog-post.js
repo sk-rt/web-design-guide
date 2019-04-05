@@ -1,58 +1,52 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react';
+import { Link, graphql } from 'gatsby';
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import { rhythm, scale } from '../utils/typography';
+import { element } from 'prop-types';
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
-
+    const { data } = this.props;
+    const siteTitle = data.site.siteMetadata.title;
+    const post = data.markdownRemark;
+    const { previous, next } = this.props.pageContext;
+    const tagList = post.frontmatter.tags.map((tag, index) => <span key={index}>{tag}</span>);
+    //サンプルファイル
+    const sampleListBlock = (samples => {
+      if (!samples || samples.length === 0) return;
+      return (
+        <div className="p-post-examples">
+          <p>コードサンプル</p>
+          {samples.map((sample, index) => {
+            return (
+              <a href={`/samples/${sample.file}`} key={index}>
+                {sample.title}
+              </a>
+            );
+          })}
+        </div>
+      );
+    })(post.frontmatter.samples);
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title={siteTitle} current={post}>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
-        <h1 className="p-article-title" style={{
-          fontSize: rhythm(2),
-          fontWeight: 600
-        }}>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            ...scale(1 / 5),
-            marginBottom: rhythm(1)
-          }}
-        >
-          {post.frontmatter.date}
-          {post.frontmatter.tag}
-        </p>
-        <div className='p-article-body' dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
-        <Bio />
-
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
+        <header className="p-article__header">
+          <h1 className="p-article__title">{post.frontmatter.title}</h1>
+          <p className="p-article__tags c-tag-list">{tagList}</p>
+        </header>
+        {sampleListBlock}
+        <div className="p-article__body" dangerouslySetInnerHTML={{ __html: post.html }} />
+        <ul className="p-post__nav">
+          <li className="p-post__nav-item is-prev">
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
-          <li>
+          <li className="p-post__nav-item is-next">
             {next && (
               <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
@@ -61,11 +55,11 @@ class BlogPostTemplate extends React.Component {
           </li>
         </ul>
       </Layout>
-    )
+    );
   }
 }
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -75,6 +69,7 @@ export const pageQuery = graphql`
         author
       }
     }
+
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
@@ -82,8 +77,13 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        tag
+        tags
+        excerpt
+        samples {
+          title
+          file
+        }
       }
     }
   }
-`
+`;
