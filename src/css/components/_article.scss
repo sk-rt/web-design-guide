@@ -172,6 +172,7 @@
     box-sizing: border-box;
     display: block;
     margin: 0;
+    font-size: 1.2rem;
 
     &.is-next {
         text-align: right;
@@ -184,6 +185,8 @@
         text-overflow: ellipsis;
         width: 100%;
         padding: 1.4em 0;
+        font-weight: 600;
+
     }
 
     /* ~~~~~ SP ~~~~~~ */
