@@ -1,67 +1,27 @@
 ---
-title: テスト
-date: '2015-05-06T23:46:37.121Z'
-excerpt: 'Wow! I love blogging so much already.'
-tags: ['基本', 'TEST']
+title: Webサイトとは
+date: '2017-05-01'
+excerpt: 'WEBページが表示される基本的な仕組み'
+tags: ['基本']
 featuredImage: 'featured-01.png'
-samples:
-  [
-    { 'title': 'サンプル1', 'file': 'intro/sample.zip' },
-    { 'title': 'サンプル2', 'file': 'sample.zip' },
-  ]
 ---
 
-Wow! I love blogging so much already.
+# Web ページとは
 
-Did you know that "despite its name, salted duck eggs can also be made from
-chicken eggs, though the taste and texture will be somewhat different, and the
-egg yolk will be less rich."?
+`HTML`形式で記述されており、インターネット上に公開され、`ブラウザ`で表示されるページのこと。
 
-[リンク](http://google.com){target="\_blank"}
+# Web ページが表示されるまで
 
----
+ブラウザで `URL`を指定(リクエスト)すると、`Webサーバー`からデータが帰ってくる(レスポンス)。  
+サーバーから取得した`HTML`・`CSS`・`JavaScript`や画像・フォントなどを、ブラウザが解釈しウィンドウに`レンダリング(描画)`する。
 
-## Image
+※ もっと詳しく知りたい人は[ここで](https://qiita.com/tsin1rou/items/d4c781a2f25e2b92fa5e)
 
-![ache avatar](./featured-01.png){ height=100 }
+![Webページ](./fig_01_01.png) ![Webページ](./fig_01_02.png)
 
-## Table
+# URL とは
 
-| header1    |     header2 |   header3    |
-| :--------- | ----------: | :----------: |
-| align left | align right | align center |
-| a          |           b |      c       |
+インターネット上の住所のようなもの。ドメインでどのサーバーにリクエストするか指定する。  
+Web サーバーも一般的な PC と同じく`ツリー構造`になっており、URL では `/(スラッシュ)`とファイル・ディレクトリ名で取得するページを指定する。
 
-WEB の住所のようなもの。ドメインでどのサーバーにリクエストするか指定する。  
-サーバーも一般的な PC と同じく`ツリー構造` になっており、URL ではスラッシュ /とファイル・ディレクトリ名で取得するページを指定する。  
-Yeah, I didn't either.
-
-## SyntaxHilight
-
-### CSS
-
-```css
-.l-main {
-  display: block;
-  position: relative;
-}
-/* ~~~~~~~~~ SP ~~~~~~~~~  */
-@media (max-width: $bp_sp) {
-  .l-section {
-    padding-top: 70px;
-    padding-bottom: 8%;
-  }
-}
-```
-
-### JS
-
-```js
-const contentAnimation = () => {};
-```
-
-```html
-<div class="p-footer-copyright">
-  <small></small>
-</div>
-```
+![URLとは](./fig_01_03.png)

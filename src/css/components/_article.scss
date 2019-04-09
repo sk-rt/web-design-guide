@@ -3,7 +3,7 @@
 }
 
 .p-article__title {
-    font-size: 4rem;
+    font-size: 3.7rem;
     margin-bottom: 0.4em;
     line-height: 1.2;
     font-weight: 700;
@@ -54,13 +54,16 @@
 }
 
 .p-article__body {
+    line-height: 2;
+
     p {
         margin-bottom: 1em;
+        margin-top: 1em;
     }
 
     h1 {
         padding: 0.4em 0em;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
         font-weight: 700;
         margin-top: 1.4em;
         margin-bottom: 1em;
@@ -123,9 +126,9 @@
     justify-content: space-between;
     align-items: stretch;
     padding: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.9);
     margin: 0;
-    margin-top: 4rem;
+    margin-top: 5rem;
 
     /* ~~~~~ SP ~~~~~~ */
     @media (max-width: 767px) {

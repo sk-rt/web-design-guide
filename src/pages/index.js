@@ -12,7 +12,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle} current={null}>
-        <SEO title="All posts" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
+        <SEO title="Top" lang="ja" />
 
         {posts.map(({ node }, index) => {
           const tagList = node.frontmatter.tags.map((tag, index) => <span key={index}>{tag}</span>);
@@ -53,7 +53,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: ASC }) {
       edges {
         node {
           excerpt

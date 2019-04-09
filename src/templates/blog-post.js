@@ -3,8 +3,7 @@ import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import { rhythm, scale } from '../utils/typography';
-import { element } from 'prop-types';
+// import { rhythm, scale } from '../utils/typography';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -31,7 +30,7 @@ class BlogPostTemplate extends React.Component {
     })(post.frontmatter.samples);
     return (
       <Layout location={this.props.location} title={siteTitle} current={post}>
-        <SEO title={post.frontmatter.title} description={post.excerpt} />
+        <SEO title={post.frontmatter.title} description={post.excerpt} lang="ja" />
         <header className="p-article__header">
           <h1 className="p-article__title">{post.frontmatter.title}</h1>
           <p className="p-article__tags c-tag-list">{tagList}</p>
