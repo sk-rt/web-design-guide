@@ -11,8 +11,8 @@
     "ios_saf >= 8"
   ],
   "dependencies": {
-    "archiver": "^3.0.0",
     "autoprefixer": "^9.4.7",
+    "babel-loader": "^8.0.5",
     "bulma": "^0.7.4",
     "gatsby": "^2.0.119",
     "gatsby-image": "^2.0.29",
@@ -65,7 +65,5 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
-  "devDependencies": {
-    "cpx": "^1.5.0"
-  }
+  "devDependencies": {}
 }

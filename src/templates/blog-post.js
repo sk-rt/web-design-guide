@@ -31,28 +31,30 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle} current={post}>
         <SEO title={post.frontmatter.title} description={post.excerpt} lang="ja" />
-        <header className="p-article__header">
-          <h1 className="p-article__title">{post.frontmatter.title}</h1>
-          <p className="p-article__tags c-tag-list">{tagList}</p>
-        </header>
-        {sampleListBlock}
-        <div className="p-article__body" dangerouslySetInnerHTML={{ __html: post.html }} />
-        <ul className="p-post__nav">
-          <li className="p-post__nav-item is-prev">
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li className="p-post__nav-item is-next">
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
+        <article>
+          <header className="p-article__header">
+            <h1 className="p-article__title">{post.frontmatter.title}</h1>
+            <p className="p-article__tags c-tag-list">{tagList}</p>
+          </header>
+          {sampleListBlock}
+          <div className="p-article__body" dangerouslySetInnerHTML={{ __html: post.html }} />
+          <ul className="p-post__nav">
+            <li className="p-post__nav-item is-prev">
+              {previous && (
+                <Link to={previous.fields.slug} rel="prev">
+                  ← {previous.frontmatter.title}
+                </Link>
+              )}
+            </li>
+            <li className="p-post__nav-item is-next">
+              {next && (
+                <Link to={next.fields.slug} rel="next">
+                  {next.frontmatter.title} →
+                </Link>
+              )}
+            </li>
+          </ul>
+        </article>
       </Layout>
     );
   }
@@ -68,7 +70,6 @@ export const pageQuery = graphql`
         author
       }
     }
-
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
@@ -79,8 +80,8 @@ export const pageQuery = graphql`
         tags
         excerpt
         samples {
-          title
           file
+          title
         }
       }
     }

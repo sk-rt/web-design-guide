@@ -13,8 +13,7 @@
     {
       "files": ["*.md"],
       "options": {
-        "proseWrap": "never",
-        "htmlWhitespaceSensitivity": "ignore"
+        "singleQuote": false
       }
     }
   ]

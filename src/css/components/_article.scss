@@ -81,7 +81,7 @@
         font-weight: 600;
         margin-top: 1.4em;
         margin-bottom: 1em;
-        background-color: #f5f5f5;
+        background-color: #eee;
         padding: 0.4em 0.8em;
         border-radius: 8px;
     }
@@ -117,6 +117,35 @@
         [align='right'] {
             text-align: right;
         }
+    }
+
+    ul,
+    ol {
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+        li {
+            line-height: 1.7;
+            margin-top: .3em;
+            margin-bottom: .3em;
+        }
+    }
+
+    blockquote {
+        border-left: 5px solid #EEE;
+        padding: .1em 0 .1em 1em;
+        margin-left: 0;
+        background-color: #f5f5f5;
+        margin-right: 0;
+    }
+
+    small {
+        font-size: 70%;
+    }
+
+    small code {
+        background-color: #333;
+        color: #FFF;
     }
 }
 
