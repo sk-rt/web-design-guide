@@ -21,7 +21,11 @@ class About extends React.Component {
               <br />
               また、難しく感じない様に、あえて触れていないこともありますのでご注意を。
             </p>
-            <a href="https://github.com/sk-rt/web-design-guide" target="_blank">
+            <a
+              href="https://github.com/sk-rt/web-design-guide"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               GitHub
             </a>
           </div>
