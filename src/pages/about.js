@@ -19,9 +19,11 @@ class About extends React.Component {
             <p>
               Web開発のごく基礎を学ぶ目的であり、深く掘り下げるものではありません。
               <br />
-              また、難しく感じない様に、あえて触れていないこともありますのでご容赦ください。
+              また、難しく感じない様に、あえて触れていないこともありますのでご注意を。
             </p>
-            <a href="https://github.com/sk-rt/web-design-guide">GitHub</a>
+            <a href="https://github.com/sk-rt/web-design-guide" target="_blank">
+              GitHub
+            </a>
           </div>
         </article>
       </Layout>
