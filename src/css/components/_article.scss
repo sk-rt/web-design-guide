@@ -117,6 +117,19 @@
         [align='right'] {
             text-align: right;
         }
+
+        [align='left'] {
+            white-space: nowrap;
+
+            code {
+                white-space: nowrap;
+            }
+        }
+    }
+
+    em {
+        color: #f20;
+        font-style: normal;
     }
 
     ul,
@@ -147,6 +160,7 @@
         background-color: #333;
         color: #FFF;
     }
+
 }
 
 .p-post__nav {

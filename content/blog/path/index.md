@@ -22,7 +22,7 @@ URL などで指定する。主に外部サイトのパスを指定するのに�
 - URL で指定　`http://www.osaka-geidai.ac.jp/geidai/index.html`
 - スラッシュで指定　`/geidai/index.html`
 
-パスが`/`から始まると現在のサーバーの一番上の階層という意味になる。
+パスが`/`から始まると現在のサーバーの一番上の階層(`ルート`)という意味になる。
 
 ## 相対パス
 
@@ -30,28 +30,34 @@ URL などで指定する。主に外部サイトのパスを指定するのに�
 
 - `ディレクトリ名/` or `ディレクトリ名/ファイル名`で指定する。
 - 上の階層を指定するときは`../`で一つ階層が上がる。
-- 現在の階層はなにも指定しないか`./`で指定する。
+- 現在の階層は`./`で始めるか、なにも指定しない（./は省略可能）。
+
+### html でのパスの使用例
 
 ```html
 <!-- ↓ (例)CSS読み込み -->
-<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="./css/style.css" />
 
 <!-- ↓ (例)リンク -->
-<a href="page/01.html">ページリンク</a>
+<a href="page/01.html">`page`フォルダ内の`01.html`</a>
 
 <!-- ↓ (例)画像読み込み -->
-<img src="../images/fig_01_01.png" alt="" />
+<img src="../images/fig.png" alt="1つ上の階層の`images`フォルダ内の`fig.png`" />
+
 <!-- ↓ (例)画像読み込み -->
-<img src="../../images/fig_01_01.png" alt="" />
+<img src="../../images/fig.png" alt="2つ上の階層の `images`フォルダ内の`fig.png" />
+
+<!-- ↓ (例)画像読み込み 絶対パス -->
+<img src="/images/fig.png" alt="ルートから `images`フォルダ内の`fig.png" />
 ```
 
 # フォルダ名/ファイル名のルール
 
-- フォルダ名やファイル名は必ず **`半角英数字`** を使用すること。
-- `-`,`_`を以外の記号や空白を使用しないこと。
-- 拡張子を必ず指定すること。
+- フォルダ名やファイル名は必ず **_半角英数字_** を使用すること。
+- `-` `_`以外の**_記号や空白を含めない_**こと。
+- **_拡張子を必ず指定_**すること。`.html`,`.css`など
 
 ---
 
-- **OK** `file-name.html`
+- **OK** `filename.html` `file-name.html`
 - **NG** `ファイル.html` `file name.html` `file&name.html` `😃.html`
