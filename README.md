@@ -1,6 +1,6 @@
 # Web Design Guide
 
-＊この[サイト](https://web-d.netlify.com/)は大阪芸術大学の講義用に制作されました。  
+＊この[サイト](https://web-d.netlify.com/)は大学の講義用に制作されました。  
 授業時間の関係もあり、詳細な説明は省いてます。
 
 ## サイトの目的

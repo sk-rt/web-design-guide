@@ -10,11 +10,6 @@
     }
 }
 
-.page-footer {
-    font-size: 10px;
-    text-align: right;
-    padding: 3rem 0 5rem;
-}
 
 .page-header {
     padding: 0 0 5rem;
@@ -32,5 +27,22 @@
     /* ~~~~~ SP ~~~~~~ */
     @media (max-width: 767px) {
         font-size: 2rem;
+    }
+}
+
+.page-footer {
+
+    text-align: right;
+    padding: 3rem 0 5rem;
+    font-size: 10px;
+
+    a {
+        border-bottom: 1px solid;
+        display: inline-block;
+        margin-right: 1em;
+    }
+
+    small {
+        font-size: 10px;
     }
 }

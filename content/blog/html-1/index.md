@@ -19,7 +19,9 @@ samples: [{ file: "basic/plain-html.zip", title: "プレーンなHTML" }]
     <title>HTMLの基礎</title>
   </head>
   <body>
-    <h1>HTMLの基礎</h1>
+    <div id="main" class="main-container">
+      <h1>HTMLの基礎</h1>
+    </div>
   </body>
 </html>
 ```

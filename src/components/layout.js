@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import Header from './header';
 import Navigation from './navigation';
 
@@ -41,8 +42,11 @@ class Layout extends React.Component {
 
           <main>{children}</main>
           <footer className="page-footer">
-            © {new Date().getFullYear()}
-            {` Ryuta Sakai`}
+            <Link to="about">About</Link>
+            <small>
+              © {new Date().getFullYear()}
+              {` Ryuta Sakai`}
+            </small>
           </footer>
         </div>
       </div>
