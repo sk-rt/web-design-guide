@@ -1,33 +1,33 @@
-import Typography from "typography";
+import Typography from 'typography';
 
 const typography = new Typography({
-  baseFontSize: "18px",
+  baseFontSize: '18px',
   baseLineHeight: 1.8,
   headerFontFamily: [
-    "-apple-system",
-    "BlinkMacSystemFont",
-    "Avenir",
-    "Avenir Next",
-    "Hiragino Sans",
-    "ヒラギノ角ゴシック",
-    "ヒラギノ角ゴ ProN W3",
-    "メイリオ",
-    "Meiryo",
-    "Roboto",
-    "sans-serif"
+    '-apple-system',
+    'BlinkMacSystemFont',
+    'Avenir',
+    'Avenir Next',
+    'Hiragino Sans',
+    'ヒラギノ角ゴシック',
+    'ヒラギノ角ゴ ProN W3',
+    'メイリオ',
+    'Meiryo',
+    'Roboto',
+    'sans-serif'
   ],
   bodyFontFamily: [
-    "-apple-system",
-    "BlinkMacSystemFont",
-    "Avenir",
-    "Avenir Next",
-    "Hiragino Sans",
-    "ヒラギノ角ゴシック",
-    "ヒラギノ角ゴ ProN W3",
-    "メイリオ",
-    "Meiryo",
-    "Roboto",
-    "sans-serif"
+    '-apple-system',
+    'BlinkMacSystemFont',
+    'Avenir',
+    'Avenir Next',
+    'Hiragino Sans',
+    'ヒラギノ角ゴシック',
+    'ヒラギノ角ゴ ProN W3',
+    'メイリオ',
+    'Meiryo',
+    'Roboto',
+    'sans-serif'
   ]
 });
 
