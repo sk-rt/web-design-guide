@@ -2,11 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Web Design`,
     author: `R Sakai`,
-    description: `Web Design`,
-    siteUrl: `https://x.netlify.com/`,
-    social: {
-      twitter: ``
-    }
+    description: `Web Design Guide`,
+    siteUrl: `https://web-d.netlify.com/`
   },
   plugins: [
     {
@@ -54,19 +51,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      }
-    },
-    `gatsby-plugin-feed`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `Web`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`
+        trackingId: `UA-118267445-2`
       }
     },
     `gatsby-plugin-offline`,
