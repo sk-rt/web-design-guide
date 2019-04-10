@@ -3,7 +3,7 @@ import { StaticQuery, graphql, Link } from 'gatsby';
 
 class Navigation extends React.Component {
   toggle() {
-    console.log('CLICK', this.props);
+    // console.log('CLICK', this.props);
     return this.props.toggleDrawer();
   }
   render() {

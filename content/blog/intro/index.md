@@ -4,7 +4,6 @@ date: "2015-03-01T22:40:32.169Z"
 excerpt: "Webの基本的な仕組み"
 tags: ["基本"]
 featuredImage: "featured-01.png"
-samples: [{ file: "basic/test.zip", title: "test" }]
 ---
 
 # Web ページとは？

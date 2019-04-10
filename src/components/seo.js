@@ -35,7 +35,7 @@ function SEO({ description, lang = 'ja', meta, keywords, title }) {
               },
               {
                 property: `og:type`,
-                content: `website`
+                content: `article`
               }
             ]}
           />
