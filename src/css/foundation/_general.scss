@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+/* ~~~~~ SP ~~~~~~ */
+@media (max-width: 480px) {
+    html {
+        font-size: 13px;
+    }
+}
+
 body {
     letter-spacing: 0.05em;
 }
