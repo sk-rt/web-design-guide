@@ -4,6 +4,7 @@ date: "2015-06-10T22:40:32.169Z"
 excerpt: "スタイルシートの記述方法やプロパティの種類など"
 tags: ["CSS"]
 featuredImage: "featured-css.png"
+samples: [{ file: "css/css-basic.zip", title: "CSS基礎演習" }]
 ---
 
 # 基本書式: セレクタとプロパティ
