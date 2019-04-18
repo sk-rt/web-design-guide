@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-// import { rhythm, scale } from '../utils/typography';
+import { fixExternalLink } from '../utils/articleUtils';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -37,7 +37,13 @@ class BlogPostTemplate extends React.Component {
             <p className="p-article__tags c-tag-list">{tagList}</p>
           </header>
           {sampleListBlock}
-          <div className="p-article__body" dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div
+            className="p-article__body"
+            dangerouslySetInnerHTML={{ __html: post.html }}
+            ref={articleBody => {
+              fixExternalLink(articleBody);
+            }}
+          />
           <ul className="p-post__nav">
             <li className="p-post__nav-item is-prev">
               {previous && (
