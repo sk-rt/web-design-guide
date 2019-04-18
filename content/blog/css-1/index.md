@@ -1,6 +1,6 @@
 ---
 title: CSS基礎 1
-date: "2015-06-10T22:40:32.169Z"
+date: "2019-01-19"
 excerpt: "スタイルシートの記述方法やプロパティの種類など"
 tags: ["CSS"]
 featuredImage: "featured-css.png"
@@ -86,5 +86,5 @@ body {
 
 > その他セレクタは以下を参照
 >
-> - [CSS のセレクタとは？覚えておきたい 25 種類と書き方](https://saruwakakun.com/html-css/reference/selector){tatget="\_blank"}
-> - [CSS セレクタのチートシート](https://webliker.info/css-selector-cheat-sheet/){tatget="\_blank"}
+> - [CSS のセレクタとは？覚えておきたい 25 種類と書き方](https://saruwakakun.com/html-css/reference/selector)
+> - [CSS セレクタのチートシート](https://webliker.info/css-selector-cheat-sheet/)

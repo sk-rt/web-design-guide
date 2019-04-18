@@ -1,6 +1,6 @@
 ---
 title: ボックスモデル
-date: "2015-06-13T22:12:03.284Z"
+date: "2019-01-30"
 excerpt: 要素のサイズや余白などの指定
 tags: [CSS]
 featuredImage: featured-css.png
@@ -21,16 +21,17 @@ samples:
 
 - 要素の幅・高さを指定する。
 - ブロック要素のみ。インライン要素には指定できない。
-- 単位には `px` `%` `vw` などが使用可能。（%の場合は親要素の幅が基準）
+- 単位には `px` `%` `vw` `em` などが使用可能。（%の場合は**親要素のサイズ**が基準）
 - 指定がない場合、width は親要素の内側一杯に広がり、height は要素の中身の高さになる。
 
 ## margin (外側の余白)
 
 - 要素同士のスキマ（外側の余白）を上下左右指定する。
-- 単位には `px` `%` `vw` 使用可能。（%の場合は親要素の幅が基準）
+- 単位には `px` `%` `vw` `em` などが使用可能。（%の場合は**親要素の幅**が基準）
 - **左右に `auto` を指定すると要素を中央にできる。**
 - `margin-top` `margin-right` `margin-bottom` `margin-left` で上下左右を個別に設定できる。
 - マイナスの値を指定することも可能。
+- 上下（垂直）の要素同士のマージンには[マージンの相殺](https://coliss.com/articles/build-websites/operation/css/about-collapsing-margins.html)が起こるので注意。
 
 #### 値の指定方法
 
@@ -42,9 +43,9 @@ samples:
 ## padding (内側の余白)
 
 - 要素の内側の余白を上下左右指定する。
-- 単位には `px` `%` `vw` 使用可能。（%の場合は親要素の幅が基準）
+- 単位には `px` `%` `vw` `em` などが使用可能。（%の場合は**親要素の幅**が基準）
 - margin と同じく`padding-top` `padding-right` `padding-bottom` `padding-left` で上下左右を個別に設定できる。
-- 値の指定方法は margin と同じ
+- 値の指定方法は margin と同じ。（ただしマイナスの値や auto は不可）
 
 # ボックスモデルの例
 

@@ -1,6 +1,6 @@
 ---
 title: CSS基礎 2
-date: "2015-06-11T22:40:32.169Z"
+date: "2019-01-20"
 excerpt: "カラーコードや単位、基礎的なプロパティ紹介"
 tags: ["CSS"]
 featuredImage: "featured-css.png"
@@ -12,9 +12,9 @@ featuredImage: "featured-css.png"
 - 6 桁の値、例えば `#FF0099` は 3 原色に分解すると `R:FF G:00 B:99` となり、10 進数に直すと `R:255 / G:0 / B:153` になる
 
 > 参考:  
-> [RGB と 16 進数カラーコードの相互変換ツール](https://www.peko-step.com/tool/tfcolor.html){target="\_blank"}  
-> [Adobe Color](https://color.adobe.com/ja/create/color-wheel/){target="\_blank"}  
-> [原色大辞典](https://www.colordic.org/){target="\_blank"}
+> [RGB と 16 進数カラーコードの相互変換ツール](https://www.peko-step.com/tool/tfcolor.html)  
+> [Adobe Color](https://color.adobe.com/ja/create/color-wheel/)  
+> [原色大辞典](https://www.colordic.org/)
 
 - その他主な色指定として `rgba` がある。`rgba(255,0,153,0.5)`などと記述し、10 進数の RGB 値 + **透明度(0〜1)**を指定できる。
 
@@ -44,19 +44,19 @@ CSS で使う主な単位に、ピクセル(px)、パーセント(%)、em、vw �
 
 ## ボーダー（枠線）
 
-| border       |                                                                                                                                                                |
-| :----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`border`** | 要素の周囲にボーダー（枠線）を付ける。[参考](https://developer.mozilla.org/ja/docs/Web/CSS/border){target="\_blank"} <br>例：`border: 2px solid #FF0000;` など |
+| border       |                                                                                                                                              |
+| :----------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`border`** | 要素の周囲にボーダー（枠線）を付ける。[参考](https://developer.mozilla.org/ja/docs/Web/CSS/border) <br>例：`border: 2px solid #FF0000;` など |
 
 ## 背景
 
-| backround                 |                                                                                                                                                                       |
-| :------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`background-color`**    | 背景色を指定する。<br>例：`background-color: #FF0000;` など                                                                                                           |
-| **`background-image`**    | 背景に画像を指定する。[参考](https://developer.mozilla.org/ja/docs/Web/CSS/background-repeat){target="\_blank"} <br>例：`background-image: url("../image.png");` など |
-| **`background-repeat`**   | 背景画像の繰り返し指定。[参考](https://developer.mozilla.org/ja/docs/Web/CSS/background-repeat){target="\_blank"} <br>例：`background-repeat: repeat;` など           |
-| **`background-position`** | 背景画像の位置を指定する。[参考](https://developer.mozilla.org/ja/docs/Web/CSS/background-position){target="\_blank"} <br>例：`background-position: 0% 50%;` など     |
+| backround                 |                                                                                                                                                     |
+| :------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`background-color`**    | 背景色を指定する。<br>例：`background-color: #FF0000;` など                                                                                         |
+| **`background-image`**    | 背景に画像を指定する。[参考](https://developer.mozilla.org/ja/docs/Web/CSS/background-repeat) <br>例：`background-image: url("../image.png");` など |
+| **`background-repeat`**   | 背景画像の繰り返し指定。[参考](https://developer.mozilla.org/ja/docs/Web/CSS/background-repeat) <br>例：`background-repeat: repeat;` など           |
+| **`background-position`** | 背景画像の位置を指定する。[参考](https://developer.mozilla.org/ja/docs/Web/CSS/background-position) <br>例：`background-position: 0% 50%;` など     |
 
 > その他プロパティの参考  
-> [CSS プロパティ一覧](https://www.tagindex.com/stylesheet/properties/){target="\_blank"}  
-> [スタイルシートリファレンス（目的別）](http://www.htmq.com/style/){target="\_blank"}
+> [CSS プロパティ一覧](https://www.tagindex.com/stylesheet/properties/)  
+> [スタイルシートリファレンス（目的別）](http://www.htmq.com/style/)

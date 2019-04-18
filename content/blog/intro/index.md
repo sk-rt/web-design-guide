@@ -1,6 +1,6 @@
 ---
 title: Webサイトとは？
-date: "2015-03-01T22:40:32.169Z"
+date: "2019-01-01"
 excerpt: "Webの基本的な仕組み"
 tags: ["イントロ"]
 featuredImage: "featured-01.png"

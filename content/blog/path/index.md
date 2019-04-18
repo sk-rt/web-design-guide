@@ -1,6 +1,6 @@
 ---
 title: ファイルパスについて
-date: "2015-06-04T22:40:32.169Z"
+date: "2019-01-16"
 excerpt: "HTML・CSSなど共通で使用するパス(path)について"
 tags: ["HTML", "CSS"]
 featuredImage: "featured-html.png"

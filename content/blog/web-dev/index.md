@@ -1,6 +1,6 @@
 ---
 title: Web制作について
-date: "2015-05-10T22:12:03.284Z"
+date: "2019-01-10"
 excerpt: Web制作の役割分担や制作フロー、方法など
 tags: [イントロ]
 featuredImage: featured-web.png

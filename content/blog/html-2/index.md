@@ -1,6 +1,6 @@
 ---
 title: HTML基礎 2
-date: "2015-06-02T22:40:32.169Z"
+date: "2019-01-15"
 excerpt: "ブロックレベル要素とインライン要素やタグの種類"
 tags: ["HTML"]
 featuredImage: "featured-html.png"
@@ -50,8 +50,8 @@ css で指定しない限り**横幅一杯に表示**され、上から下に並
 
 > その他のタグなど、詳しくは以下などのサイトを参照
 >
-> - [ HTML5 リファレンス](http://www.htmq.com/html5/){target="\_blank" rel="noopener noreferrer"}
-> - [ HTML5 要素一覧 TAG index](http://www.tagindex.com/html5/elements/){target="\_blank" rel="noopener noreferrer"}
+> - [ HTML5 リファレンス](http://www.htmq.com/html5/)
+> - [ HTML5 要素一覧 TAG index](http://www.tagindex.com/html5/elements/)
 
 # インデント・コメント
 

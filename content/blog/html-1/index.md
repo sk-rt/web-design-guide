@@ -1,6 +1,6 @@
 ---
 title: HTML基礎 1
-date: "2015-06-01T22:40:32.169Z"
+date: "2019-01-12"
 excerpt: "HTMLの記法や基本ルール"
 tags: ["HTML"]
 featuredImage: "featured-html.png"
