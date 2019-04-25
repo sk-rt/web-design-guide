@@ -11,7 +11,7 @@ class About extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle} current={null}>
-        <SEO title="About" lang="ja" />
+        <SEO title="2019 素材置き場" lang="ja" />
         <article>
           <header class="p-article__header">
             <h1 class="p-article__title">2019 素材置き場</h1>
