@@ -119,8 +119,8 @@
     overflow: auto;
     height: 100%;
     -webkit-overflow-scrolling: touch;
-    padding: 0 0 0;
-
+    padding: 0 0 60px;
+    box-sizing: border-box;
     /*スクロールバー全体*/
     &::-webkit-scrollbar {
         width: 10px;
@@ -139,13 +139,23 @@
         border: 3px solid #fff;
     }
 }
-
-.c-posts-nav__top {
-    display: block;
+.c-posts-nav__list {
+    border-bottom: 8px solid rgba(0, 0, 0, 0.05);
+}
+%post-nav__item {
     padding: 0.6em 1em;
     font-size: 0.9rem;
-    font-weight: 600;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.c-posts-nav__static-page {
+    display: block;
+    @extend %post-nav__item;
+}
+.c-posts-nav__top {
+    display: block;
+    font-weight: 600;
+    @extend %post-nav__item;
+    border-bottom-width: 8px;
 }
 
 .c-posts-nav__item {
@@ -153,11 +163,8 @@
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0.6em 1em;
     padding-right: 0;
-    font-size: 0.9rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-
+    @extend %post-nav__item;
     &:hover {
         color: #aaa;
     }
