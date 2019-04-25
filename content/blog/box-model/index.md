@@ -4,7 +4,7 @@ date: "2019-01-30"
 excerpt: 要素のサイズや余白などの指定
 tags: [CSS]
 featuredImage: featured-css.png
-samples:
+samples: [{ file: "css/box-model.zip", title: "ボックスモデル演習" }]
 ---
 
 #要素のサイズ・余白の指定
@@ -49,7 +49,7 @@ samples:
 
 # ボックスモデルの例
 
-<iframe height="500" style="width: 100%;" scrolling="no" title="Box Model" src="//codepen.io/RsakaiForEducation/embed/MRpbqP/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="600" style="width: 100%;" scrolling="no" title="Box Model" src="//codepen.io/RsakaiForEducation/embed/MRpbqP/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/RsakaiForEducation/pen/MRpbqP/'>Box Model</a> by R Sakai
   (<a href='https://codepen.io/RsakaiForEducation'>@RsakaiForEducation</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
