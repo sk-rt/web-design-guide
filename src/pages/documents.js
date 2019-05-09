@@ -13,8 +13,8 @@ class About extends React.Component {
       <Layout location={this.props.location} title={siteTitle} current={null}>
         <SEO title="2019 素材置き場" lang="ja" />
         <article>
-          <header class="p-article__header">
-            <h1 class="p-article__title">2019 素材置き場</h1>
+          <header className="p-article__header">
+            <h1 className="p-article__title">2019 素材置き場</h1>
           </header>
           <div className="p-article__body">
             <h1>アンケート</h1>
