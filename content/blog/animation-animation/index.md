@@ -56,4 +56,5 @@ samples:
 
 > **animation 参考**  
 > [【CSS3】@keyframes と animation 関連のまとめ](https://qiita.com/7968/items/1d999354e00db53bcbd8)  
-> [使える！CSS アニメーション 20 選](https://lab.sonicmoov.com/markup/css/css-animation-20/)
+> [使える！CSS アニメーション 20 選](https://lab.sonicmoov.com/markup/css/css-animation-20/)  
+> [Pure CSS Emoji](https://codepen.io/pbutcher/pen/wMxwbr)

@@ -5,6 +5,10 @@ excerpt: " transformを使った要素の変形"
 tags: [CSS]
 featuredImage: featured-css-animation.png
 samples:
+  [
+    { file: "css/transition.zip", title: "Transition演習" },
+    { file: "css/type-switcher.zip", title: "スイッチアニメーション" },
+  ]
 ---
 
 #transform プロパティ
