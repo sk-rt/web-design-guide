@@ -11,7 +11,9 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = data.site.siteMetadata.title;
     const post = data.markdownRemark;
     const { previous, next } = this.props.pageContext;
-    const tagList = post.frontmatter.tags.map((tag, index) => <span key={index}>{tag}</span>);
+    const tagList = post.frontmatter.tags
+      ? post.frontmatter.tags.map((tag, index) => <span key={index}>{tag}</span>)
+      : '';
     //サンプルファイル
     const sampleListBlock = (samples => {
       if (!samples || samples.length === 0) return;
