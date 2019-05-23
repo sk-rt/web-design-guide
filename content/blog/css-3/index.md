@@ -1,0 +1,80 @@
+---
+title: その他のプロパティ
+date: "2019-04-10"
+excerpt: "opacity,box-shadow,グラデーションなど装飾系のCSSプロパティ"
+tags: [CSS]
+featuredImage: featured-css.png
+samples: []
+---
+
+# opacity
+
+- opacity は要素の**_透明度_**を設定できるプロパティ。
+- 初期値は `1` で、`0〜1` の値を設定できる。0 に設定すると完全に透明になる。
+- 記法は `opacity: 透明度`
+- アニメーション可
+
+```css
+.op {
+  opacity: 0.3;
+}
+```
+
+# box-shadow / text-shadow
+
+### box-shadow
+
+- **_要素に影をつける_**プロパティ。
+- 記法は `box-shadow: [X軸の位置][y軸の位置] [ぼかしサイズ] [影の広がり] [影の色][内側 (inset)]`
+- X 軸は右、Y 軸は下への影の位置。マイナスの値も指定可能。
+- [ぼかしサイズ]、[影の広がり]、[影の色]は省略可能。
+- 内側の影にするときは最後に `inset` をつける
+- アニメーション可
+
+```css
+.box-shadow {
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+}
+```
+
+<iframe height="600" style="width: 100%;" scrolling="no" title="Box Shadow" src="//codepen.io/RsakaiForEducation/embed/KLQqYR/?height=265&theme-id=dark&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/RsakaiForEducation/pen/KLQqYR/'>Box Shadow</a> by R Sakai
+  (<a href='https://codepen.io/RsakaiForEducation'>@RsakaiForEducation</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+### text-shadow
+
+- **_テキストに影をつける_**プロパティ。
+- 基本的に box-shadow と同じだが inset) と影の広がりは指定できない。
+- アニメーション可
+
+```css
+.text-shadow {
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+```
+
+> 参考  
+> [CSS generator / box-shadow](https://css-generator.net/box-shadow/)  
+> [CSS generator / text-shadow](https://css-generator.net/text-shadow/)
+
+# グラデーション(linear-gradient)
+
+- **_背景にグラデーション_**を設定できる。
+- 基本的な記法は `background-image: linear-gradient(角度, 開始色, 終了色);`
+- 円形のグラデーションは`radial-gradient()`
+- **_アニメーション不可_**
+
+```css
+.gradient {
+  background-image: linear-gradient(45deg, #ff0000, #00ffff);
+}
+```
+
+<iframe height="600" style="width: 100%;" scrolling="no" title="Gradient " src="//codepen.io/RsakaiForEducation/embed/WBMEjK/?height=265&theme-id=dark&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/RsakaiForEducation/pen/WBMEjK/'>Gradient </a> by R Sakai
+  (<a href='https://codepen.io/RsakaiForEducation'>@RsakaiForEducation</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+> 参考  
+> [WebGradients](https://webgradients.com/)
