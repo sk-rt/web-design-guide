@@ -17,13 +17,49 @@ class About extends React.Component {
             <h1 className="p-article__title">2019 素材置き場</h1>
           </header>
           <div className="p-article__body">
-            <h1>アンケート</h1>
-            <p>
-              <small>2019.4.26</small>
-            </p>
-            <a href="https://forms.gle/jzSU6Qy1iGDEsWVq7" target="_blank" rel="noopener noreferrer">
-              2019 Webデザインアンケート
-            </a>
+            <section className="p-document-section">
+              <h1>課題制作</h1>
+              <p>
+                <small>2019.5.29</small>
+              </p>
+              <a href="/samples/webdesign_2019_work.pdf" target="_blank" rel="noopener noreferrer">
+                提出課題内容(PDF)
+              </a>
+              <h4>【参考】</h4>
+              <ul>
+                <li>
+                  <a
+                    href="https://x-ten.2018.sakairyuta.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    2018年 前期 Webデザイン - X展
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://mp.sakairyuta.com/works/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    2018年 後期モーションプランニング
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <section className="p-document-section">
+              <h1>アンケート</h1>
+              <p>
+                <small>2019.4.26</small>
+              </p>
+              <a
+                href="https://forms.gle/jzSU6Qy1iGDEsWVq7"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                2019 Webデザインアンケート
+              </a>
+            </section>
           </div>
         </article>
       </Layout>
