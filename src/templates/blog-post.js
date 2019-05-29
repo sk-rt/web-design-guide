@@ -12,7 +12,11 @@ class BlogPostTemplate extends React.Component {
     const post = data.markdownRemark;
     const { previous, next } = this.props.pageContext;
     const tagList = post.frontmatter.tags
-      ? post.frontmatter.tags.map((tag, index) => <span key={index}>{tag}</span>)
+      ? post.frontmatter.tags.map((tag, index) => (
+          <Link to={`/#${encodeURI(tag)}`} key={index}>
+            {tag}
+          </Link>
+        ))
       : '';
     //サンプルファイル
     const sampleListBlock = (samples => {
