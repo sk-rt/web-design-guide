@@ -4,7 +4,6 @@ import ThemeContext from '../context/ThemeContext';
 
 class Navigation extends React.Component {
   toggle() {
-    // console.log('CLICK', this.props);
     return this.props.toggleDrawer();
   }
   render() {
