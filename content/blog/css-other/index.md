@@ -7,6 +7,10 @@ featuredImage: featured-css.png
 samples: []
 ---
 
+- [opacity](#opacity)
+- [box-shadow / text-shadow](#box-shadow--text-shadow)
+- [グラデーション(linear-gradient)](#%E3%82%B0%E3%83%A9%E3%83%87%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3linear-gradient)
+
 # opacity
 
 - opacity は要素の**_透明度_**を設定できるプロパティ。
@@ -45,7 +49,7 @@ samples: []
 ### text-shadow
 
 - **_テキストに影をつける_**プロパティ。
-- 基本的に box-shadow と同じだが inset) と影の広がりは指定できない。
+- 基本的に `box-shadow` と同じだが、内側の影と影の広がりは指定できない。
 - アニメーション可
 
 ```css
