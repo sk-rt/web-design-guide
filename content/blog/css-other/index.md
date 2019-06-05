@@ -7,11 +7,12 @@ featuredImage: featured-css.png
 samples: []
 ---
 
-- [opacity](#opacity)
-- [box-shadow / text-shadow](#box-shadow--text-shadow)
+- [透明度(opacity)](#%E9%80%8F%E6%98%8E%E5%BA%A6opacity)
+- [影 (box-shadow / text-shadow)](#%E5%BD%B1box-shadow--text-shadow)
 - [グラデーション(linear-gradient)](#%E3%82%B0%E3%83%A9%E3%83%87%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3linear-gradient)
+- [効果(filter)](#%E5%8A%B9%E6%9E%9Cfilter)
 
-# opacity
+# 透明度(opacity)
 
 - opacity は要素の**_透明度_**を設定できるプロパティ。
 - 初期値は `1` で、`0〜1` の値を設定できる。0 に設定すると完全に透明になる。
@@ -24,7 +25,7 @@ samples: []
 }
 ```
 
-# box-shadow / text-shadow
+# 影(box-shadow / text-shadow)
 
 ### box-shadow
 
@@ -82,3 +83,32 @@ samples: []
 
 > 参考  
 > [WebGradients](https://webgradients.com/)
+
+# 効果(filter)
+
+- 要素にぼかし、カラー変換などの効果を与えることができる。
+- 画像(img や background)にも適用できる。
+- 代表的な値(`0`には好きな値を入れる)
+  - `blur( 0px )` ぼかし
+  - `brightness( 0% )` 明るさ
+  - `saturate( 0% )` 彩度
+  - `hue-rotate( 0deg )` 色相回転
+- アニメーション可
+
+```css
+.filter-blur {
+  filter: blur(30px);
+}
+.filter-brightness {
+  filter: brightness(100%);
+}
+```
+
+<iframe height="700" style="width: 100%;" scrolling="no" title="CSS Filters" src="//codepen.io/RsakaiForEducation/embed/VONxRj/?height=265&theme-id=dark&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/RsakaiForEducation/pen/VONxRj/'>CSS Filters</a> by R Sakai
+  (<a href='https://codepen.io/RsakaiForEducation'>@RsakaiForEducation</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+> 参考  
+> [Photoshop はもういらない？明度も彩度も超手軽に変えられる CSS フィルターがスゴい](https://www.webprofessional.jp/css-filter-effects-blur-grayscale-brightness-and-more-in-css/)  
+> [CSSFilterGenerator.com](http://www.cssfiltergenerator.com/)
