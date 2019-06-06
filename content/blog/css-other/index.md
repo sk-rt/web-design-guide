@@ -83,7 +83,8 @@ samples: []
 </iframe>
 
 > 参考  
-> [WebGradients](https://webgradients.com/)
+> [WebGradients](https://webgradients.com/)  
+> [Generate a CSS Color Gradient](https://mycolor.space/gradient)
 
 # 効果(filter)
 
