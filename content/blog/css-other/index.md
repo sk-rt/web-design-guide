@@ -7,10 +7,11 @@ featuredImage: featured-css.png
 samples: []
 ---
 
+<!--
 - [透明度(opacity)](#%E9%80%8F%E6%98%8E%E5%BA%A6opacity)
 - [影 (box-shadow / text-shadow)](#%E5%BD%B1box-shadow--text-shadow)
 - [グラデーション(linear-gradient)](#%E3%82%B0%E3%83%A9%E3%83%87%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3linear-gradient)
-- [効果(filter)](#%E5%8A%B9%E6%9E%9Cfilter)
+- [効果(filter)](#%E5%8A%B9%E6%9E%9Cfilter) -->
 
 # 透明度(opacity)
 

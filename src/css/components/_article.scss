@@ -55,7 +55,23 @@
 
 .p-article__body {
     line-height: 1.9;
-
+    > h2:first-of-type {
+        font-size: 0.9em;
+        margin-bottom: -2.5em;
+        padding-left: 2%;
+        border: none;
+        color: rgba(0, 0, 0, 0.3);
+        position: relative;
+        z-index: 1;
+    }
+    > ul:first-of-type {
+        list-style-type: decimal;
+        padding: 3em 5% 1.4em;
+        list-style-position: inside;
+        background-color: #f8f8f8;
+        border-radius: 10px;
+        margin: 0;
+    }
     p {
         margin-bottom: 1em;
         margin-top: 1em;
