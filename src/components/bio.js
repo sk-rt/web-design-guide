@@ -1,4 +1,3 @@
-import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
 
@@ -9,7 +8,7 @@ function Bio() {
     <StaticQuery
       query={bioQuery}
       render={data => {
-        const { author, social } = data.site.siteMetadata;
+        const { author } = data.site.siteMetadata;
         return (
           <div
             style={{
