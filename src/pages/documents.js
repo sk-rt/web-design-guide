@@ -18,7 +18,31 @@ class About extends React.Component {
           </header>
           <div className="p-article__body">
             <section className="p-document-section">
+              <h1>課題提出</h1>
+
+              <p>
+                <small>2019.7.4</small>
+              </p>
+              <ul>
+                <li>
+                  <a
+                    href="/samples/webdesign_2019_work_format.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    課題のフォーマット、提出方法(PDF)
+                  </a>
+                </li>
+                <li>
+                  <a href="/samples/template/x18000.zip" target="_blank" rel="noopener noreferrer">
+                    提出テンプレートサンプル(ZIP)
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <section className="p-document-section">
               <h1>課題制作</h1>
+
               <p>
                 <small>2019.5.29</small>
               </p>
