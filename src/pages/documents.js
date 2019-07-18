@@ -77,7 +77,8 @@ class About extends React.Component {
                     http://ouaas.php.xdomain.jp/
                   </a>
                   <p style={{ fontSize: '0.9em' }}>
-                    ＊上記のページに自分の学籍番号・名前があり、リンク先のページが見れるか確認すること。
+                    ＊上記のページに自分の学籍番号・名前があり、リンク先のページが見れるか
+                    <span style={{ color: '#f00' }}>必ず</span>確認すること。
                     <br />
                     ＊名前が無い場合や"名無し"となっている場合は
                     <code class="language-text">author.json</code>
@@ -85,6 +86,11 @@ class About extends React.Component {
                     <br />
                     ＊見れない場合は <code class="language-text">index.html</code>
                     が正しく入っているか確認。
+                    <br />＊
+                    <span style={{ color: '#f00' }}>
+                      名前が無い/見れない場合は提出していないことになるので必ず確認すること。
+                    </span>
+                    <br />
                   </p>
                 </li>
               </ol>
