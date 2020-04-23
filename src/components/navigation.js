@@ -10,10 +10,10 @@ class Navigation extends React.Component {
     const { current } = this.props;
     return (
       <ThemeContext.Consumer>
-        {context => (
+        {(context) => (
           <StaticQuery
             query={navQuery}
-            render={data => {
+            render={(data) => {
               const posts = data.allMarkdownRemark.edges;
               const { isShowDrawer, toggleDrawer } = context;
               return (
@@ -49,9 +49,9 @@ class Navigation extends React.Component {
                         );
                       })}
                     </div>
-                    <Link className="c-posts-nav__static-page" to={`/documents/`}>
+                    {/* <Link className="c-posts-nav__static-page" to={`/documents/`}>
                       2019 素材置き場
-                    </Link>
+                    </Link> */}
                   </nav>
                 </div>
               );
