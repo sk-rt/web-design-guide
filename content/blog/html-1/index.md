@@ -7,6 +7,20 @@ featuredImage: "featured-html.png"
 samples: [{ file: "basic/plain-html.zip", title: "プレーンなHTML" }]
 ---
 
+# HTML とは
+
+- `Hyper Text Markup Language` の略
+- **ページの骨格**にあたるファイルで、ページの内容・構造を`タグ` を使ってブラウザが理解できるように意味付けした**文書**。
+- 拡張子は`.html`
+
+> **HyperText とは？**  
+> HTML は元々は研究機関で文書の整理のため発明されたもの。文書同士を相互にリンク(ハイパーリンク)させ、自由に横断できる「超」テキストとして作られた。
+>
+> - 引用：[HTML って何だ -- ごく簡単な HTML の説明](https://www.kanzaki.com/docs/html/htminfo10.html)
+> - 参考: [世界最初の Web サイト](http://info.cern.ch/hypertext/WWW/TheProject.html)
+
+_HTML は文書構造を記述するもので装飾やレイアウトはしない。_
+
 # HTML サンプル
 
 ```html

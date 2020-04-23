@@ -10,10 +10,10 @@ class Navigation extends React.Component {
     const { current } = this.props;
     return (
       <ThemeContext.Consumer>
-        {context => (
+        {(context) => (
           <StaticQuery
             query={navQuery}
-            render={data => {
+            render={(data) => {
               const posts = data.allMarkdownRemark.edges;
               const { isShowDrawer, toggleDrawer } = context;
               return (
@@ -37,6 +37,16 @@ class Navigation extends React.Component {
                         const number = `00${index + 1}`.slice(-2);
                         const title = node.frontmatter.title || node.fields.slug;
                         const isCurrent = current && current.id === node.id;
+                        //サンプルファイル
+                        const samplesListBlock = ((samples) => {
+                          if (!samples || samples.length === 0) return;
+                          const _samples = samples.filter((ex) => {
+                            return ex.file && ex.title;
+                          });
+                          if (_samples.length === 0) return;
+                          return <i className="c-posts-nav__exercise-icon">EX</i>;
+                        })(node.frontmatter.samples);
+                        console.log(node.frontmatter);
                         return (
                           <Link
                             className={`c-posts-nav__item ${isCurrent ? 'is-current' : ''}`}
@@ -45,13 +55,14 @@ class Navigation extends React.Component {
                           >
                             <span className="c-posts-nav__index">{number}</span>
                             <div>{title}</div>
+                            {samplesListBlock}
                           </Link>
                         );
                       })}
                     </div>
-                    <Link className="c-posts-nav__static-page" to={`/documents/`}>
+                    {/* <Link className="c-posts-nav__static-page" to={`/documents/`}>
                       2019 素材置き場
-                    </Link>
+                    </Link> */}
                   </nav>
                 </div>
               );
@@ -77,6 +88,10 @@ export const navQuery = graphql`
           frontmatter {
             title
             tags
+            samples {
+              file
+              title
+            }
           }
         }
       }
