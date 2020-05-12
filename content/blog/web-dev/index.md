@@ -14,7 +14,7 @@ samples:
 ディレクターとデザイナーが兼業だったりフロントとバックが兼業だったり、フロントが数人いたりと案件により異なる。
 
 - **フロントエンドエンジニア**  
-  ブラウザ側(特に JavaScript)のコードを書く人
+  ブラウザ側のコード(JavaScript/HTML/CSS)を書く人。＊HTML/CSS のみの場合はマークアップエンジニアと呼ばれる。
 - **バックエンドエンジニア**  
   サーバー側のプログラムを書く人(Java,PHP,Python,RDB,etc.)
 - **UI/UX デザイナー**  
@@ -34,13 +34,13 @@ samples:
 
 ## 設計・デザインツール
 
-`illustrator` , `Photoshop` などのグラフィックアプリや、 `XD` , `Sketch` ,`Figma` などの UI デザインに特化したアプリなど、用途やチーム毎に違う。  
+`Adobe XD` , `Sketch` ,`Figma` などの UI デザインアプリや、`illustrator` , `Photoshop` などのグラフィックアプリなど、用途やチーム毎に違う。  
 作りたい物に合わせて選択すること。
 
 ## コーディングツール
 
 コーディング/プログラミングは一般的に `テキストエディタ`や`IDE` を使用する。  
-本授業では `Visual Studio Code`を使用するが、好きなエディタや IDE があれば自由に。
+本授業では `Visual Studio Code`を使用するが、好きなエディタや IDE があれば自由に選択可。
 
 # 開発言語について
 
@@ -70,6 +70,7 @@ samples:
 ```css
 .title {
   color: #ff0000;
+  font-size: 24px;
 }
 ```
 
@@ -80,8 +81,8 @@ samples:
 - 拡張子は`.js`
 
 ```JS
-function hello(name){
+function greeting(name){
     alert('Hello, ' + name)
 }
-hello('Doman');
+greeting('Tanaka');
 ```

@@ -46,7 +46,7 @@ class Navigation extends React.Component {
                           if (_samples.length === 0) return;
                           return <i className="c-posts-nav__exercise-icon">EX</i>;
                         })(node.frontmatter.samples);
-                        console.log(node.frontmatter);
+                        // console.log(node.frontmatter);
                         return (
                           <Link
                             className={`c-posts-nav__item ${isCurrent ? 'is-current' : ''}`}
