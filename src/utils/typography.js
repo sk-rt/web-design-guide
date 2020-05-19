@@ -4,8 +4,11 @@ const typography = new Typography({
   baseFontSize: '18px',
   baseLineHeight: 1.8,
   headerFontFamily: [
-    '-apple-system',
-    'BlinkMacSystemFont',
+    // '-apple-system',
+    // 'BlinkMacSystemFont',
+    'Helvetica Neue',
+    'Helvetica',
+    'Arial',
     'Avenir',
     'Avenir Next',
     'Hiragino Sans',
@@ -14,11 +17,14 @@ const typography = new Typography({
     'メイリオ',
     'Meiryo',
     'Roboto',
-    'sans-serif'
+    'sans-serif',
   ],
   bodyFontFamily: [
-    '-apple-system',
-    'BlinkMacSystemFont',
+    // '-apple-system',
+    // 'BlinkMacSystemFont',
+    'Helvetica Neue',
+    'Helvetica',
+    'Arial',
     'Avenir',
     'Avenir Next',
     'Hiragino Sans',
@@ -27,8 +33,8 @@ const typography = new Typography({
     'メイリオ',
     'Meiryo',
     'Roboto',
-    'sans-serif'
-  ]
+    'sans-serif',
+  ],
 });
 
 // Hot reload typography in development.
