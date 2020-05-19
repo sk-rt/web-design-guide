@@ -24,7 +24,7 @@ class BlogPostTemplate extends React.Component {
       const cachecontroll = encodeURI(Date.now());
       return (
         <div className="p-post-examples">
-          <p>コードサンプル</p>
+          <p>演習ファイル</p>
           {samples.map((sample, index) => {
             return (
               <a href={`/samples/${sample.file}?${cachecontroll}`} key={index}>
