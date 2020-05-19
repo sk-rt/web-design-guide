@@ -19,14 +19,15 @@ class BlogPostTemplate extends React.Component {
         ))
       : '';
     //サンプルファイル
-    const sampleListBlock = (samples => {
+    const sampleListBlock = ((samples) => {
       if (!samples || samples.length === 0) return;
+      const cachecontroll = encodeURI(Date.now());
       return (
         <div className="p-post-examples">
           <p>コードサンプル</p>
           {samples.map((sample, index) => {
             return (
-              <a href={`/samples/${sample.file}`} key={index}>
+              <a href={`/samples/${sample.file}?${cachecontroll}`} key={index}>
                 {sample.title}
               </a>
             );
@@ -46,7 +47,7 @@ class BlogPostTemplate extends React.Component {
           <div
             className="p-article__body"
             dangerouslySetInnerHTML={{ __html: post.html }}
-            ref={articleBody => {
+            ref={(articleBody) => {
               fixExternalLink(articleBody);
             }}
           />
