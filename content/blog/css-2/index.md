@@ -19,6 +19,15 @@ samples: [{ file: "css/css-basic.zip", title: "CSS基礎演習" }]
 
 - その他主な色指定として `rgba` がある。`rgba(255,0,153,0.5)`などと記述し、10 進数の RGB 値 + **透明度(0〜1)**を指定できる。
 
+```css
+.foo {
+  color: #ffff00; /* 16進数 */
+}
+.bar {
+  color: rgba(255, 123, 153, 0.8); /* RGB + Alpha */
+}
+```
+
 # サイズの単位
 
 CSS で使う主な単位に、ピクセル(px)、パーセント(%)、em、vw など

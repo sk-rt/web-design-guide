@@ -1,6 +1,6 @@
 ---
 title: CSS セレクタ
-date: "2019-01-31"
+date: "2019-01-29"
 excerpt: "スタイルする対象の要素を指定する、セレクタについて"
 tags: [CSS]
 featuredImage: featured-css.png
