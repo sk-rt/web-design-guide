@@ -4,11 +4,12 @@ date: "2019-01-20"
 excerpt: "カラーコードや単位、基礎的なプロパティ紹介"
 tags: ["CSS"]
 featuredImage: "featured-css.png"
+samples: [{ file: "css/css-basic.zip", title: "CSS基礎演習" }]
 ---
 
-# 色（カラーコード）の指定について
+# 色（カラーコード）の指定
 
-- 色は `16進数` で指定することが多い。(`カラーコード`)
+- 色は `16進数` で指定することが多い。(`カラーコード`という)
 - 6 桁の値、例えば `#FF0099` は 3 原色に分解すると `R:FF G:00 B:99` となり、10 進数に直すと `R:255 / G:0 / B:153` になる
 
 > 参考:  
@@ -17,6 +18,15 @@ featuredImage: "featured-css.png"
 > [原色大辞典](https://www.colordic.org/)
 
 - その他主な色指定として `rgba` がある。`rgba(255,0,153,0.5)`などと記述し、10 進数の RGB 値 + **透明度(0〜1)**を指定できる。
+
+```css
+.foo {
+  color: #ffff00; /* 16進数 */
+}
+.bar {
+  color: rgba(255, 123, 153, 0.8); /* RGB + Alpha */
+}
+```
 
 # サイズの単位
 

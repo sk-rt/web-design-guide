@@ -1,6 +1,6 @@
 ---
 title: ボックスモデル
-date: "2019-01-30"
+date: "2019-01-31"
 excerpt: 要素のサイズや余白などの指定
 tags: [CSS]
 featuredImage: featured-css.png
