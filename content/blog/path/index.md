@@ -41,7 +41,8 @@ ex. `/path/index.html`
 
 # html でのパスの使用例
 
-以下の様なファイル構成のサイトがあるとする。
+以下の様なファイル構成のサイトがあるとする。  
+＊ タグやの属性の記述ルールは右を参照 [タグ・属性の記述ルール](/html-1/#%E3%82%BF%E3%82%B0%E3%83%BB%E5%B1%9E%E6%80%A7%E3%81%AE%E8%A8%98%E8%BF%B0%E3%83%AB%E3%83%BC%E3%83%AB)
 
 ```directory-structure
 <http://example.com>
