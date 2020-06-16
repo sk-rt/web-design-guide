@@ -1,7 +1,7 @@
 ---
 title: CSSアニメーション 1 - transition
 date: "2019-03-01"
-excerpt: " transionを使った繊維アニメーション"
+excerpt: " transionを使った遷移アニメーション"
 tags: [CSS]
 featuredImage: featured-css-animation.png
 samples:
