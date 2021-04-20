@@ -4,7 +4,6 @@ date: "2019-01-12"
 excerpt: "HTMLの記法や基本ルール"
 tags: ["HTML"]
 featuredImage: "featured-html.png"
-samples: [{ file: "basic/plain-html.zip", title: "プレーンなHTML" }]
 ---
 
 # HTML とは
@@ -50,6 +49,20 @@ HTML はタグの階層構造（入れ子構造）になっている。
 > タグの中には終了タグが必要ない要素もあり、これを空要素という。  
 > `<meta> <img> <br> <hr> <input>` などが主な空要素。  
 > `<br />`の様に書くこともある。
+
+> #### class 名
+>
+> class 属性は CSS で使用するので、一番使用頻度が高い。  
+> その要素がどういった要素なのか分かる様に、なるべく意味のある class 名をつけること。  
+> また、基本は日本語などは使わず _半角英字_ で設定すること。
+>
+> ❌ `<div class="なまえ">大学太郎</div>`  
+> ❌ `<div class="aaa">大学太郎</div>`  
+> ⭕️ `<div class="my-name">大学太郎</div>`
+>
+> 参考:  
+> [CSS のクラス名を決めるときに使うリスト](https://qiita.com/manabuyasuda/items/dbb76ed36970bec95470)  
+> [コーディング初学者向けに class の命名規則について考えてみた](https://crestadesign.org/css-class/)
 
 # HTML の基本要素
 
