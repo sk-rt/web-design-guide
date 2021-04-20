@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans', 'ヒラギノ角ゴシック', Roboto,
+        sans-serif;
+    line-height: 1.9;
+    font-size: 16px;
+    color: #222;
+    background-color: #ffffff;
+}
+/* ~~~~~ SP ~~~~~~ */
+@media (max-width: 800px) {
+    body {
+        font-size: 14px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+.main-title {
+    padding: 40px;
+    margin: 0;
+    text-align: center;
+}
+.section {
+    margin-bottom: 3rem;
+    padding: 0 4%;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+}
+.section-title {
+    margin-bottom: 1rem;
+    padding: 0.3rem 1rem;
+}
+
+/* ===================================
+   大きな記事
+ */
+.large-article {
+    /* レイアウト */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    /* デザイン */
+    border: 1px solid #eee;
+    color: #222;
+    text-decoration: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.large-article-image {
+    flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.large-article-image img {
+    /* 画像を領域いっぱいに表示 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.large-article-body {
+    flex-basis: auto;
+    padding: 3em 3em;
+}
+.large-article-body h3 {
+    font-size: 1.5em;
+}
+/* ===================================
+   小さな記事
+ */
+.small-article-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* 行は自動で追加 */
+    grid-auto-rows: auto;
+    gap: 20px;
+}
+.small-article {
+    border: 1px solid #eee;
+    color: #222;
+    text-decoration: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.small-article-body {
+    padding: 1em 1.2em;
+}
+/* ===================================
+   この下にメディアクエリを追加する。
+ */

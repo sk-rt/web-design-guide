@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Position演習</title>
+        <!--
+            1. cssファイルを開き、element-01〜06の位置を自由に変更する
+            2. z-indexを指定して重なりを変えてみる
+            3. `.fixed-contents`に `position: fixed;` を設定する
+        -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <h1 class="main-title">
+            Position演習
+        </h1>
+        <div class="fixed-contents">fixed</div>
+        <div class="absolute-container">
+            <div class="element-01">01</div>
+            <div class="element-02">02</div>
+            <div class="element-03">03</div>
+            <div class="element-04">04</div>
+            <div class="element-05"><img src="images/onigiri_konbu.png" alt="昆布" /></div>
+            <div class="element-06"><img src="images/onigiri_ikura.png" alt="いくら" /></div>
+        </div>
+    </body>
+</html>

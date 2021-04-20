@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/*
+【演習】
+1. body の文字色 `color` プロパティを変更してみよう
+2. body の文字サイズ `font-size` プロパティを変更してみよう
+3. body の背景色 `background-color` プロパティを変更してみよう
+4. .site-headerの 文字揃え `text-align` プロパティを変更してみよう。 `center`など。
+5. .main-contentsの 幅 `width`プロパティを変更してみよう。＊500px、 60%など
+6. .section-title の`border-left` プロパティの色や太さを変更しよう。
+7. body に背景画像`background-image`プロパティに画像 `images/pattern_1.png` を設定してみよう。
+8. HTMLに新しい要素を追加して、適当なclassを付与しよう。
+9. 8で追加した要素に自由にスタイルを設定しよう。
+/*
+
+/* ===================================
+    bodyタグ
+    このページの背景やフォントなどベースの設定
+ */
+body {
+    padding: 0;
+    margin: 0;
+    /* フォントの設定 */
+    font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans', 'ヒラギノ角ゴシック', Roboto, sans-serif;
+    color: #222;
+    font-weight: 400;
+    line-height: 1.9;
+    font-size: 20px;
+    /* 背景の設定 */
+    background-color: #ffffff;
+}
+
+/* ===================================
+    ヘッダー / ナビのスタイル
+ */
+.site-header {
+    border-bottom: 1px solid #ccc;
+    padding: 40px;
+    text-align: left;
+    background-color: #ffffee;
+}
+.global-nav a {
+    color: #000;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+/* ===================================
+    メインコンテンツのスタイル
+ */
+.main-contents {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.section {
+    padding: 30px;
+    background-color: #ffffff;
+    margin-bottom: 4em;
+}
+.section-title {
+    border-left: 4px solid #000;
+    padding-left: 15px;
+}
+
+/* ===================================
+    フッターのスタイル
+*/
+.site-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 5%;
+    text-align: right;
+}

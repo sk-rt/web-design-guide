@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans', 'ヒラギノ角ゴシック', Roboto, sans-serif;
+    line-height: 1.9;
+    font-size: 16px;
+    color: #222;
+    background-color: #ffffff;
+}
+.main-title {
+    border-bottom: 1px solid #ccc;
+    padding: 40px;
+    margin: 0;
+    text-align: center;
+}
+
+/* ===================================
+【演習】
+   以下に .box-01 〜 .box-03を記入すること
+ */
+.box-01 {
+    background-color: #fff0cf;
+}

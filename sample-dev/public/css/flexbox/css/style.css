@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans', 'ヒラギノ角ゴシック', Roboto,
+        sans-serif;
+    line-height: 1.9;
+    font-size: 16px;
+    color: #222;
+    background-color: #ffffff;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+.main-title {
+    padding: 40px;
+    margin: 0;
+    text-align: center;
+}
+.section {
+    margin-bottom: 3rem;
+}
+.section-title {
+    margin-bottom: 1rem;
+    padding: 0.3rem 1rem;
+}
+.container-A,
+.container-B {
+    margin: 0 auto;
+}
+.item-B h3 {
+    padding: 0.3em 1em;
+    margin: 0;
+}
+
+/* ===================================
+   以下に 問題A　のスタイルを記入
+ */
+.container-A {
+    background-color: #fff0cf;
+}
+
+/* ===================================
+   以下に 問題B のスタイルを記入
+ */

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans', 'ヒラギノ角ゴシック', Roboto,
+        sans-serif;
+    line-height: 1.9;
+    font-size: 16px;
+    color: #222;
+    background-color: #ffffff;
+}
+.main-title {
+    padding: 40px;
+    margin: 0;
+    text-align: center;
+}
+/* ==================================
+    基準ボックス
+*/
+.absolute-container {
+    position: relative;
+    width: 90%;
+    height: 1500px;
+    background-color: #f2f2f2;
+    margin: 50px auto 50px;
+    border: 1px solid #ccc;
+}
+
+/* ===================================
+   以下に element-01〜element-06 のスタイルを記入
+ */
+.element-01 {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    width: 200px;
+    height: 200px;
+    background-color: #ff0000;
+}
+.element-02 {
+    position: absolute;
+    top: -30px;
+    right: 10%;
+    width: 30%;
+    height: 10%;
+    background-color: #22ff00;
+}

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/*
+TypeSwitcher
+- スイッチを押すとbodyに`on`というclassがつく仕組み
+- `.on .class { ... }` でon時のstyleを変更できる
+*/
+
+/* ===================================
+ページ全体のbackgroundを指定
+*/
+.view-wrapper {
+    background: #666;
+    transition: 1s ease-in-out;
+}
+/* スイッチを押した時 */
+.on .view-wrapper {
+    background: #eee;
+}
+
+/* ===================================
+サンプル
+*/
+.sample {
+    transition: 1s;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #f00;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* スイッチを押した時 */
+.on .sample {
+    transform: translate(-50%, -50%) scale(1.4) rotate(360deg);
+}

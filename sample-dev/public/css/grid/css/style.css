@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans', 'ヒラギノ角ゴシック', Roboto,
+        sans-serif;
+    line-height: 1.9;
+    font-size: 16px;
+    color: #222;
+    background-color: #ffffff;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+.main-title {
+    padding: 40px;
+    margin: 0;
+    text-align: center;
+}
+.section {
+    margin-bottom: 3rem;
+}
+.section-title {
+    margin-bottom: 1rem;
+    padding: 0.3rem 1rem;
+}
+.container-A,
+.container-B {
+    margin: 0 auto;
+}
+.container-A > div {
+    padding: 10px;
+}
+.container-A h3 {
+    text-align: center;
+}
+.bg-red,
+.bg-yellow {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.bg-red {
+    background-color: #ff0000;
+}
+.bg-yellow {
+    background-color: #ffff00;
+}
+.bg-p-orange {
+    background-color: #ffb14d;
+}
+.bg-p-pink {
+    background-color: #ff859c;
+}
+.bg-p-blue {
+    background-color: #a1e3ed;
+}
+.bg-p-green {
+    background-color: #cbed66;
+}
+
+/* ===================================
+   以下に 問題A　のスタイルを記入
+ */
+
+/* ===================================
+   以下に 問題B のスタイルを記入
+ */

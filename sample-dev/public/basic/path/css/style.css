@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    padding: 0;
+}
+.main {
+    padding: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.page-header {
+    text-align: center;
+    margin-bottom: 3em;
+}
+.links {
+    text-align: center;
+}
+.links a {
+    font-size: 1.4em;
+    display: block;
+    margin-bottom: .4em;
+}
+.img-pazzle {
+    margin-bottom: 3em;
+}
+.line {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items:flex-start;
+
+}
+.line img {
+    vertical-align: bottom;
+}
