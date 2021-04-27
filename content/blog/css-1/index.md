@@ -34,7 +34,7 @@ featuredImage: "featured-css.png"
 # 記述例
 
 ```html
-<!-- HTML例 -->
+<!-- HTML例  -->
 <body>
   <div id="container">
     <header class="site-header">
@@ -43,9 +43,7 @@ featuredImage: "featured-css.png"
     <div class="main-contents">
       <h3 class="page-title">ページタイトルタイトル</h3>
       <div class="page-contents">
-        <p>
-          テキストテキストテキストテキストテキスト
-        </p>
+        <p>テキストテキストテキストテキストテキスト</p>
       </div>
     </div>
   </div>
@@ -59,19 +57,19 @@ css記述例
 /* タグセレクタ */
 body {
   background-color: #ffffff;
-  color: #2222222;
-  padding: 10px;
+  color: #222222;
+  padding: 0;
+  margin: 0;
 }
 /* IDセレクタ */
 #container {
-  background-color: #e5e5e5;
+  background-color: #ffdd00;
 }
 /* クラスセレクタ */
 .site-header {
   padding: 10px 40px;
   background-color: #202020;
 }
-
 .site-name {
   color: #ffffff;
   font-size: 1.2em;
@@ -80,11 +78,12 @@ body {
   width: 600px;
   margin: 0 auto;
   padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center;
 }
 /* 子要素セレクタ */
 .page-contents p {
-  color: #f00;
+  color: #ff0000;
 }
 ```
 
