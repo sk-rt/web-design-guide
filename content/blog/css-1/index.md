@@ -80,6 +80,7 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;
+  background-color: #ffee33;
 }
 /* 子要素セレクタ */
 .page-contents p {
