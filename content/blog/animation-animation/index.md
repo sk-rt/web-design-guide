@@ -18,16 +18,17 @@ samples:
 
 ## animation の指定方法
 
-| 主なプロパティ                  |                                                                                                                                  |
-| :------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
-| **`animation-name`**            | `@keyframes`で指定したアニメーションの名前。<br>(例)`animation-name: my-animation`                                               |
-| **`animation-duration`**        | **長さ**。 スタートしてから終わるまでの時間。 <br>(例)`transition: rotate(180deg)`                                               |
-| **`animation-delay`**           | **開始時間**。始まるまでの時間。 <br>(例)`animation-delay: 1.4s`                                                                 |
-| **`animation-iteration-count`** | **繰り返し回数**。`infinite`で無限回 <br>(例)`animation-iteration-count: 4`                                                      |
-| **`animation-timing-function`** | **イージング**。変化の仕方。 <br>(例)`animation-timing-function: ease-in-out`                                                    |
-| **`animation-direction`**       | **再生方向**。`normal` だと常に一定方向に変化。`alternate` で奇数回は逆方向に変化する。 <br>(例)`animation-direction: alternate` |
+| 主なプロパティ                  |                                                                                                                                                                                                                                                                        |
+| :------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`animation-name`**            | `@keyframes`で指定したアニメーションの名前。<br>(例)`animation-name: my-animation`                                                                                                                                                                                     |
+| **`animation-duration`**        | **長さ**。 スタートしてから終わるまでの時間。 <br>(例)`animation-duration: 0.5s`                                                                                                                                                                                       |
+| **`animation-delay`**           | **開始時間**。始まるまでの時間。 <br>(例)`animation-delay: 1.4s`                                                                                                                                                                                                       |
+| **`animation-iteration-count`** | **繰り返し回数**。`infinite`で無限回 <br>(例)`animation-iteration-count: 4`                                                                                                                                                                                            |
+| **`animation-timing-function`** | **イージング**。変化の仕方。 <br>(例)`animation-timing-function: ease-in-out`                                                                                                                                                                                          |
+| **`animation-direction`**       | **再生方向**。`normal` だと常に一定方向に変化。`alternate` で奇数回は逆方向に変化する。 <br>(例)`animation-direction: alternate`                                                                                                                                       |
+| **`animation-fill-mode`**       | **再生の前後の状態**。`none` だと設定なし。`forwards` は最後のフレームを、`backwards`は最初のフレームを保持。`both`は両方を保持。 <br>(例)`animation-fill-mode` <br> ＊詳細は [animation-fill-mode](https://developer.mozilla.org/ja/docs/Web/CSS/animation-fill-mode) |
 
-＊`animation: [name] [duration] [timing-function] [delay] [count] [direction]` と一括指定することもできる。
+＊`animation: [name] [duration] [timing-function] [delay] [count] [direction] [fill-mode]` と一括指定することもできる。
 
 ## keyframes の指定方法
 
