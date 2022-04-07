@@ -18,7 +18,7 @@ class BlogPostTemplate extends React.Component {
           </Link>
         ))
       : '';
-    //サンプルファイル
+    // サンプルファイル
     const sampleListBlock = ((samples) => {
       if (!samples || samples.length === 0) return;
       const cachecontroll = encodeURI(Date.now());

@@ -1,4 +1,4 @@
-export const fixExternalLink = articleBody => {
+export const fixExternalLink = (articleBody) => {
   if (
     !articleBody ||
     typeof articleBody !== 'object' ||
@@ -11,7 +11,7 @@ export const fixExternalLink = articleBody => {
   const anchors = articleBody.querySelectorAll('a');
   const domain = document.domain;
   if (!anchors || anchors.length === 0) return;
-  [].slice.call(anchors).forEach(anchor => {
+  [].slice.call(anchors).forEach((anchor) => {
     const href = anchor.href;
     const reg = new RegExp('^(https?:)?//' + domain);
     if (!href.match(reg) && href.charAt(0) !== '/' && href.charAt(0) !== '#') {
