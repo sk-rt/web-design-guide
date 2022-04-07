@@ -78,7 +78,6 @@ class BlogIndex extends React.Component {
           return (
             <article key={node.fields.slug} className="p-post-item">
               <Link className="p-post-item__link" to={node.fields.slug}>
-                <div className="p-post-item__index">{number}</div>
                 <div
                   className="p-post-item__featured-image"
                   style={{
@@ -86,6 +85,7 @@ class BlogIndex extends React.Component {
                   }}
                 />
                 <div className="p-post-item__content">
+                  <div className="p-post-item__index">{number}</div>
                   <div>
                     <h3>{title}</h3>
                     <p>{node.frontmatter.excerpt}</p>
