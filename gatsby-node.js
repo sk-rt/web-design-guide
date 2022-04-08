@@ -29,7 +29,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `
-  ).then(result => {
+  ).then((result) => {
     if (result.errors) {
       throw result.errors;
     }
@@ -48,8 +48,8 @@ exports.createPages = ({ graphql, actions }) => {
           slug: post.node.fields.slug,
           posts: posts,
           previous,
-          next
-        }
+          next,
+        },
       });
     });
   });
@@ -63,7 +63,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       name: `slug`,
       node,
-      value
+      value,
     });
   }
 };
