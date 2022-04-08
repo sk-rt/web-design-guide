@@ -13,7 +13,7 @@
   "dependencies": {
     "babel-loader": "^8.2.4",
     "bulma": "^0.9.3",
-    "gatsby": "4.7.2",
+    "gatsby": "4.11.2",
     "gatsby-image": "^2.1.2",
     "gatsby-plugin-feed": "^4.11.1",
     "gatsby-plugin-google-analytics": "^4.11.0",
