@@ -5,17 +5,19 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 class BlogIndex extends React.Component {
-  state = {
-    currentTag: ''
-  };
-
-  componentWillMount() {
-    const location = this.props.location;
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentTag: '',
+    };
     const posts = this.props.data.allMarkdownRemark.edges;
     this.tags = posts
       .flatMap(({ node }) => node.frontmatter.tags)
       .filter((x, i, self) => self.indexOf(x) === i)
-      .map(tag => encodeURI(tag));
+      .map((tag) => encodeURI(tag));
+  }
+  componentDidMount() {
+    const location = this.props.location;
     if (
       location.hash &&
       this.tags.includes(location.hash.slice(1)) &&
@@ -24,7 +26,6 @@ class BlogIndex extends React.Component {
       this.updateCurrentTag(location.hash.slice(1));
     }
   }
-
   updateCurrentTag(tag) {
     if (this.state.currentTag === tag || !tag) {
       this.setState({ currentTag: '' });
@@ -71,21 +72,21 @@ class BlogIndex extends React.Component {
           const title = node.frontmatter.title || node.fields.slug;
           if (
             this.state.currentTag &&
-            !node.frontmatter.tags.map(tag => encodeURI(tag)).includes(this.state.currentTag)
+            !node.frontmatter.tags.map((tag) => encodeURI(tag)).includes(this.state.currentTag)
           ) {
             return false;
           }
           return (
             <article key={node.fields.slug} className="p-post-item">
               <Link className="p-post-item__link" to={node.fields.slug}>
-                <div className="p-post-item__index">{number}</div>
                 <div
                   className="p-post-item__featured-image"
                   style={{
-                    backgroundImage: `url(/featured/${node.frontmatter.featuredImage})`
+                    backgroundImage: `url(/featured/${node.frontmatter.featuredImage})`,
                   }}
                 />
                 <div className="p-post-item__content">
+                  <div className="p-post-item__index">{number}</div>
                   <div>
                     <h3>{title}</h3>
                     <p>{node.frontmatter.excerpt}</p>

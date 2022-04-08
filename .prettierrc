@@ -7,7 +7,7 @@
     {
       "files": ["*.css", "*.scss"],
       "options": {
-        "tabWidth": 4
+        "tabWidth": 2
       }
     },
     {

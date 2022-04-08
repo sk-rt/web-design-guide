@@ -1,14 +1,17 @@
 import React, { createContext } from 'react';
 const defaultState = {
-  isShowDrawer: false
+  isShowDrawer: false,
 };
 const ThemeContext = createContext(defaultState);
 
 class ThemeProvider extends React.Component {
-  state = {
-    isShowDrawer: false
-  };
-  toggleDrawer = (type = 'toggle') => {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isShowDrawer: false,
+    };
+  }
+  toggleDrawer(type = 'toggle') {
     switch (type) {
       case 'hide':
         this.setState({ isShowDrawer: false });
@@ -21,7 +24,7 @@ class ThemeProvider extends React.Component {
         this.setState({ isShowDrawer: !this.state.isShowDrawer });
         break;
     }
-  };
+  }
   render() {
     const { children } = this.props;
     const { isShowDrawer } = this.state;
@@ -29,7 +32,7 @@ class ThemeProvider extends React.Component {
       <ThemeContext.Provider
         value={{
           isShowDrawer,
-          toggleDrawer: this.toggleDrawer
+          toggleDrawer: this.toggleDrawer.bind(this),
         }}
       >
         {children}

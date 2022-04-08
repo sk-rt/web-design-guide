@@ -6,6 +6,7 @@ class Navigation extends React.Component {
   toggle() {
     return this.props.toggleDrawer();
   }
+
   render() {
     const { current } = this.props;
     return (
@@ -37,7 +38,7 @@ class Navigation extends React.Component {
                         const number = `00${index + 1}`.slice(-2);
                         const title = node.frontmatter.title || node.fields.slug;
                         const isCurrent = current && current.id === node.id;
-                        //サンプルファイル
+                        // サンプルファイル
                         const samplesListBlock = ((samples) => {
                           if (!samples || samples.length === 0) return;
                           const _samples = samples.filter((ex) => {
@@ -81,7 +82,6 @@ export const navQuery = graphql`
       edges {
         node {
           id
-          excerpt
           fields {
             slug
           }

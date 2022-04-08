@@ -9,7 +9,7 @@ class Layout extends React.Component {
     const { title, children, current } = this.props;
     return (
       <ThemeContext.Consumer>
-        {context => (
+        {(context) => (
           <div className={`page-container ${context.isShowDrawer ? 'is-show-drawer' : ''}`}>
             <Navigation current={current} />
             <div className="page-content">
