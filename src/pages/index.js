@@ -5,17 +5,19 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 class BlogIndex extends React.Component {
-  state = {
-    currentTag: '',
-  };
-
-  componentWillMount() {
-    const location = this.props.location;
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentTag: '',
+    };
     const posts = this.props.data.allMarkdownRemark.edges;
     this.tags = posts
       .flatMap(({ node }) => node.frontmatter.tags)
       .filter((x, i, self) => self.indexOf(x) === i)
       .map((tag) => encodeURI(tag));
+  }
+  componentDidMount() {
+    const location = this.props.location;
     if (
       location.hash &&
       this.tags.includes(location.hash.slice(1)) &&
@@ -24,7 +26,6 @@ class BlogIndex extends React.Component {
       this.updateCurrentTag(location.hash.slice(1));
     }
   }
-
   updateCurrentTag(tag) {
     if (this.state.currentTag === tag || !tag) {
       this.setState({ currentTag: '' });
