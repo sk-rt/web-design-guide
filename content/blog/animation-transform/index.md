@@ -11,7 +11,7 @@ samples:
   ]
 ---
 
-#transform プロパティ
+# transform プロパティ
 
 transform は要素を変形させるプロパティ。  
 変形には`移動` `回転` `伸縮` `傾斜` がある。  
@@ -24,12 +24,12 @@ transform: translate(40px, 10px);
 transform: translate(50%, -20%) rotate(250deg); /*（複数の場合は半角スペース空き）*/
 ```
 
-| 主な値               |                                                                               |
-| :------------------- | ----------------------------------------------------------------------------- |
-| **`translate(X,Y)`** | **移動**( `X,Y` に移動する値を指定) <br>(例)`transition: translate(10px,0px)` |
-| **`rotate(deg)`**    | **回転**( 単位は`deg`＊角度) <br>(例)`transition: rotate(180deg)`             |
-| **`scale(X,Y)`**     | **伸縮**( 1 を基準にした伸縮度を指定) <br>(例)`transition: scale(2,1.5)`      |
-| **`skew(X,Y)`**      | **傾斜(歪み)** ( 単位は`deg`＊角度)<br>(例)`transition: skew(10deg,20deg)`    |
+| 主な値               |                                                                              |
+| :------------------- | ---------------------------------------------------------------------------- |
+| **`translate(X,Y)`** | **移動**( `X,Y` に移動する値を指定) <br>(例)`transform: translate(10px,0px)` |
+| **`rotate(deg)`**    | **回転**( 単位は`deg`＊角度) <br>(例)`transform: rotate(180deg)`             |
+| **`scale(X,Y)`**     | **伸縮**( 1 を基準にした伸縮度を指定) <br>(例)`transform: scale(2,1.5)`      |
+| **`skew(X,Y)`**      | **傾斜(歪み)** ( 単位は`deg`＊角度)<br>(例)`transform: skew(10deg,20deg)`    |
 
 ## サンプル
 
