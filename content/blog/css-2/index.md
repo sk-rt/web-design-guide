@@ -17,7 +17,7 @@ samples: [{ file: "css/css-basic.zip", title: "CSS基礎演習" }]
 > [Adobe Color](https://color.adobe.com/ja/create/color-wheel/)  
 > [原色大辞典](https://www.colordic.org/)
 
-- その他主な色指定として `rgba` がある。`rgba(255,0,153,0.5)`などと記述し、10 進数の RGB 値 + **透明度(0〜1)**を指定できる。
+- その他主な色指定として `rgba` がある。`rgba(255,0,153,0.5)`などと記述し、10 進数の RGB 値 + **透明度(0〜1)** を指定できる。
 
 ```css
 .foo {

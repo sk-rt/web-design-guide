@@ -7,7 +7,7 @@ featuredImage: featured-css-animation.png
 samples:
 ---
 
-#transition（トランジション） プロパティ
+# transition（トランジション） プロパティ
 
 - `styleの値が変化する時`にスムーズに遷移させるプロパティ。
 - 要素の`変化する時間` や`変化の仕方` などを指定できる。
@@ -35,7 +35,7 @@ samples:
 ＊一括指定は `transition: [対象プロパティ] [時間] [イージング] [ディレイ]` と記述。＊時間以外は省略可能  
  (例) `transition: 1s;` `transition: all 1.5s ease-in-out 0.4s;`
 
-> #### *＊*イージングについて　　
+> #### ＊イージングについて　　
 >
 > 指定できる主な値は以下。
 >
