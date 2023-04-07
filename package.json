@@ -1,7 +1,7 @@
 {
   "name": "web-design-guide",
   "private": true,
-  "description": "Guide for Web development ",
+  "description": "",
   "version": "0.1.0",
   "author": "R Sakai",
   "browserslist": [
@@ -49,7 +49,7 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
+  "license": "UNLICENSED",
   "main": "n/a",
   "repository": {
     "type": "git",
