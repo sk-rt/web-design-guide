@@ -13,7 +13,8 @@
     {
       "files": ["*.md"],
       "options": {
-        "singleQuote": false
+        "singleQuote": false,
+        "parser": "markdown-nocjsp"
       }
     }
   ]

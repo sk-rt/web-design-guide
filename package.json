@@ -72,6 +72,7 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-standard": "^4.1.0",
-    "prettier": "^2.6.2"
+    "prettier": "^2.8.7",
+    "prettier-plugin-md-nocjsp": "^1.5.1"
   }
 }
