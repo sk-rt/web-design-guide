@@ -22,6 +22,8 @@ class Navigation extends React.Component {
                   <button
                     className={`c-posts-nav__toggle ${isShowDrawer ? 'is-show' : ''}`}
                     type="button"
+                    aria-controls="globalNav"
+                    aria-expanded={isShowDrawer ? 'true' : 'false'}
                     onClick={() => {
                       toggleDrawer();
                     }}
@@ -29,7 +31,11 @@ class Navigation extends React.Component {
                     <span />
                   </button>
 
-                  <nav className="c-posts-nav__nav">
+                  <nav
+                    id="globalNav"
+                    className="c-posts-nav__nav"
+                    aria-hidden={isShowDrawer ? 'false' : 'true'}
+                  >
                     <Link className="c-posts-nav__top" to={`/`}>
                       INDEX
                     </Link>
