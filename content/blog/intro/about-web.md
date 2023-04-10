@@ -41,4 +41,4 @@ Webサーバーは一般的なPCのファイルシステムと同様に、フォ
 
 `/foo/bar.html` なら**foo**というフォルダの中の **bar.html** という意味になります。
 
-![URLとは](./intro_url.png)
+![URLとは](./intro_url.png?v=2)
