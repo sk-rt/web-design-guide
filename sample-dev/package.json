@@ -5,12 +5,14 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "start": "npm run server & npm run copy:watch",
+        "start": "npm run server",
         "server": "browser-sync start --config bs-config.js",
-        "copy": "cpx 'public/**/*.zip' ../static/samples/",
-        "copy:watch": "npm run copy -- --watch"
+        "dist": "yarn zip && npm run copy",
+        "zip": "node zip.js",
+        "copy": "cpx 'public/**/*.zip' ../static/samples/"
     },
     "devDependencies": {
+        "archiver": "^5.3.1",
         "browser-sync": "^2.26.7",
         "cpx": "^1.5.0"
     }

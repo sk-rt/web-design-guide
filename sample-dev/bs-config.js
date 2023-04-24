@@ -12,15 +12,15 @@
  |
  */
 module.exports = {
-  files: ['public/**/*'],
-  watchOptions: {
-    ignoreInitial: true
-  },
-  server: {
-    baseDir: './public'
-  },
-  port: 3100,
-  logLevel: 'info',
-  open: true,
-  browser: 'default'
+    files: ['public/**/*'],
+    watchOptions: {
+        ignoreInitial: true,
+    },
+    server: {
+        baseDir: './public',
+    },
+    port: 3100,
+    logLevel: 'info',
+    open: true,
+    browser: 'default',
 };
