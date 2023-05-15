@@ -139,17 +139,18 @@ div.foo {
 >
 > - [CSS のセレクタとは？覚えておきたい 25 種類と書き方](https://saruwakakun.com/html-css/reference/selector)
 > - [CSS セレクタのチートシート](https://webliker.info/css-selector-cheat-sheet/)
+> - [CSS selectors cheatsheet](https://frontend30.com/css-selectors-cheatsheet/)
 
 # 詳細度
 
-セレクタには詳細度という概念があり、詳細度が高いほどそのスタイルが**_優先されます_**。  
+セレクタには詳細度という概念があり、詳細度が高いほどそのスタイルが*優先されます*。  
 ＊詳細度が同じ場合は後に記述した方が優先されます。
 
-大まかな詳細度は以下の数字を足すと計算できます。（＊[実際少し違う](https://qiita.com/izumin5210/items/8ae78cb4f4bd325bccb4#%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E5%8B%98%E9%81%95%E3%81%84)）
+大まかな詳細度は以下の数字を足すと計算できます。（＊[実際は少し違います](https://qiita.com/izumin5210/items/8ae78cb4f4bd325bccb4#%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E5%8B%98%E9%81%95%E3%81%84)）
 
-- **ID セレクタ(#)** => `100点`
-- **Class セレクタ(.)** => `10点`
-- **要素型セレクタ** => `1点`
+- **ID セレクタ(#)** → `100点`
+- **Class セレクタ(.)** → `10点`
+- **要素型セレクタ** → `1点`
 
 ### 例 1
 
