@@ -5,44 +5,145 @@ body {
     margin: 0;
     font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans', 'ヒラギノ角ゴシック', Roboto,
         sans-serif;
-    line-height: 1.9;
+    line-height: 1.8;
     font-size: 16px;
     color: #222;
     background-color: #ffffff;
 }
-.main-title {
-    padding: 40px;
-    margin: 0;
-    text-align: center;
+img {
+    max-width: 100%;
+    height: auto;
 }
 /* ==================================
-    基準ボックス
+    Header
 */
-.absolute-container {
-    position: relative;
-    width: 90%;
-    height: 1500px;
-    background-color: #f2f2f2;
-    margin: 50px auto 50px;
-    border: 1px solid #ccc;
+/* 
+    【演習 3】
+    以下 `.header` のスタイルに、
+    positionに `fixed` を指定し、位置を上から `20px`、左から `20px` に指定してください。
+ */
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 24px;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+    border-radius: 24px;
+
+}
+.header-title {
+    font-size: 16px;
+    margin: 0;
 }
 
-/* ===================================
-   以下に element-01〜element-06 のスタイルを記入
- */
-.element-01 {
-    position: absolute;
-    top: 300px;
-    left: 300px;
-    width: 200px;
-    height: 200px;
-    background-color: #ff0000;
+/* ==================================
+    共通style
+*/
+.heading-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding-top: 17%;
+    padding-bottom: 17%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
-.element-02 {
-    position: absolute;
-    top: -30px;
-    right: 10%;
-    width: 30%;
-    height: 10%;
-    background-color: #22ff00;
+.heading-content h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+.heading-content p {
+    font-size: 18px;
+    margin: 0;
+}
+.section {
+    padding-bottom: 100px;
+}
+.content {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+/* ==================================
+    背景に画像置いたタイトル
+*/
+/* 
+    【演習 1】
+    背景に画像を置いたタイトルのスタイルを記述します。
+
+    1. `.cover-image-heading` のスタイルに、` position: relative;` を指定してください。
+
+    2. `.cover-image-bg` のスタイルに、
+    positonに `absolute` を指定し、top, left, right, bottomそれぞれに `10px` を指定してください。
+ */
+.cover-image-heading {
+    color: #fff;
+    background-color: #eee;
+}
+
+.cover-image-bg {
+   
+}
+
+.cover-image-bg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 画像の縦横比を維持したまま親要素にフィットさせる */
+}
+/* ==================================
+    背景にCSSで装飾を置いたタイトル
+*/
+
+/* 
+    【演習 2】
+    円形の装飾をデザイン通りに配置していきます。
+
+    1. `.bubble-heading` のスタイルに、` position: relative;` を指定してください。
+
+    1. `.bubble-1` の postionに `absolute` を指定し、`top: -50px`、`left: -160px` を指定してください。
+
+    2. `.bubble-2` の postionに `absolute` を指定し、` top: -40px;`、`right: 12%` を指定してください。
+
+    3. .bubble-1, .bubble-2を参考に、
+    .bubble-3, .bubble-4 がデザイン通りになるようにCSSを記述してください。
+ */
+
+.bubble-heading {
+    background-color: #ECF8FF;
+    overflow: hidden;
+}
+
+.bubble {
+    border-radius: 50%; /* 角丸をつけて円形にする */
+    background-color: #3F92F3;
+}
+
+.bubble-1 {
+    width: 320px;
+    height: 320px;  
+}
+
+.bubble-2 {
+    width: 160px;
+    height: 160px;
+    opacity: 0.6;
+}
+
+.bubble-3 {
+    width: 120px;
+    height: 120px;
+    opacity: 0.4;
+}
+
+.bubble-4 {
+    width: 240px;
+    height: 240px;
 }
