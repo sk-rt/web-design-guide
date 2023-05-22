@@ -1,29 +1,82 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Position演習</title>
-        <!--
-            1. cssファイルを開き、element-01〜06の位置を自由に変更する
-            2. z-indexを指定して重なりを変えてみる
-            3. `.fixed-contents`に `position: fixed;` を設定する
-        -->
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
-    <body>
-        <h1 class="main-title">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Position演習</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<!--
+    【演習】
+    以下のデザインを参考に進めてください。
+    https://www.figma.com/proto/XNEsUmoHjz3UMi1XR6STjH/web-programing?type=design&node-id=1-24&scaling=scale-down&page-id=0%3A1
+-->
+
+<body>
+    <!-- 
+        【演習 3】
+        1. css/style.cssを開き、デザイン通りになる様にスタイルを調整してください。
+    -->
+    <header class="header">
+        <h1 class="header-title">
             Position演習
         </h1>
-        <div class="fixed-contents">fixed</div>
-        <div class="absolute-container">
-            <div class="element-01">01</div>
-            <div class="element-02">02</div>
-            <div class="element-03">03</div>
-            <div class="element-04">04</div>
-            <div class="element-05"><img src="images/onigiri_konbu.png" alt="昆布" /></div>
-            <div class="element-06"><img src="images/onigiri_ikura.png" alt="いくら" /></div>
+    </header>
+    <section class="section">
+        <!-- 
+            【演習 1】
+            1. 以下の `img` のsrcに images/cover.jpgへのパスを指定してください。
+            2. css/style.cssを開き、デザイン通りになる様にスタイルを調整してください。
+        -->
+        <div class="cover-image-heading">
+            <div class="heading-content">
+                <h2>
+                    COVER IMAGE HEADING
+                </h2>
+                <p>
+                    背景に画像置いた見出し
+                </p>
+            </div>
+            <div class="cover-image-bg">
+                <img src="" alt="">
+            </div>
         </div>
-    </body>
+        <div class="content">
+            <p>
+                背景に画像を置いたタイトルデザインです。<br>
+                背景画像に postion: absoluteを指定し、container全体に表示させます。
+            </p>
+        </div>
+    </section>
+    <section class="section">
+        <!-- 
+            【演習 2】
+            1. css/style.cssを開き、デザイン通りになる様にスタイルを調整してください。
+            ＊デザインの数字1〜4は、各要素のclass `bubble-1 ~ 4`に対応するものとします。
+        -->
+        <div class="bubble-heading">
+            <div class="heading-content">
+                <h2>
+                    BUBBLE HEADING
+                </h2>
+                <p>
+                    背景にCSSで装飾を置いた見出し
+                </p>
+            </div>
+            <div class="bubble bubble-1"></div>
+            <div class="bubble bubble-2"></div>
+            <div class="bubble bubble-3"></div>
+            <div class="bubble bubble-4"></div>
+        </div>
+        <div class="content">
+            <p>
+                背景に装飾用の要素を配置したタイトルデザインです。<br>
+                円形の要素を複数用意し、各要素に postion: absoluteを指定し、配置していきます。
+            </p>
+        </div>
+    </section>
+</body>
+
 </html>
