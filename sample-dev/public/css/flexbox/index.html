@@ -1,86 +1,81 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>フレックスボックス演習</title>
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <!--
-            1. style.cssファイルを開き、exercises.pngの通りに問題A,Bのスタイルを変更する。
-            2. 上記ができれば`justify-content`や`align-items`などの値を変更してどの様に見た目が変わるか確認しよう。
-        -->
-    </head>
-    <body>
-        <h1 class="main-title">
-            フレックスボックス演習
-        </h1>
-        <section class="section">
-            <h2 class="section-title">問題A</h2>
-            <div class="container-A">
-                <div class="item-A item-A-01">
-                    <h3>Flex Item 01</h3>
-                    <p>
-                        小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。
-                    </p>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>フレックスボックス演習</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--
+    【演習】
+    style.cssファイルを開き、以下のデザインを参考に、レイアウトを完成させてください。
+    
+    https://www.figma.com/proto/XNEsUmoHjz3UMi1XR6STjH/web-programing?page-id=0%3A1&node-id=80-119&scaling=scale-down&starting-point-node-id=80%3A119
+    -->
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="./" class="header-title">
+            Flexbox演習
+        </a>
+        <nav class="header-navi">
+            <a href="#">Menu1</a>
+            <a href="#">Menu2</a>
+            <a href="#">Menu3</a>
+        </nav>
+    </header>
+    <!-- Container -->
+    <div class="container">
+        <h2 class="page-title">Flexboxを使ってレイアウトを完成させてください。</h2>
+        <div class="card-list">
+            <!-- 画像と文章ブロック 1 -->
+            <div class="media-text">
+                <div class="media-text-image">
+                    <img src="images/image_1.jpg" width="480" height="320" alt="ノートPCを触るイメージ" />
                 </div>
-                <div class="item-A item-A-02">
-                    <h3>Flex Item 02</h3>
-                    <p>
-                        別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。
+                <div class="media-text-content">
+                    <h3 class="media-text-title">ダミータイトル</h3>
+                    <p class="media-text-description">
+                        この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
                     </p>
-                </div>
-                <div class="item-A item-A-03">
-                    <h3>Flex Item 03</h3>
-                    <p>
-                        新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。
-                    </p>
-                </div>
-                <div class="item-A item-A-04">
-                    <h3>Flex Item 04</h3>
-                    <p>
-                        親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。
-                    </p>
+                    <p class="media-text-nickname">ニックネーム</p>
                 </div>
             </div>
-        </section>
-        <section class="section">
-            <h2 class="section-title">問題B</h2>
-            <div class="container-B">
-                <div class="item-B item-B-01">
-                    <img src="images/image_01.jpg" alt="01" />
-                    <h3>Flex Item 01</h3>
+
+            <!-- 画像と文章ブロック 2 -->
+            <div class="media-text">
+                <div class="media-text-image">
+                    <img src="images/image_2.jpg" width="480" height="320" alt="デスクのレイアウトイメージ" />
                 </div>
-                <div class="item-B item-B-02">
-                    <img src="images/image_02.jpg" alt="02" />
-                    <h3>Flex Item 02</h3>
-                </div>
-                <div class="item-B item-B-03">
-                    <img src="images/image_03.jpg" alt="03" />
-                    <h3>Flex Item 03</h3>
-                </div>
-                <div class="item-B item-B-04">
-                    <img src="images/image_04.jpg" alt="04" />
-                    <h3>Flex Item 04</h3>
-                </div>
-                <div class="item-B item-B-05">
-                    <img src="images/image_05.jpg" alt="05" />
-                    <h3>Flex Item 05</h3>
-                </div>
-                <div class="item-B item-B-06">
-                    <img src="images/image_06.jpg" alt="06" />
-                    <h3>Flex Item 06</h3>
-                </div>
-                <div class="item-B item-B-07">
-                    <img src="images/image_07.jpg" alt="07" />
-                    <h3>Flex Item 07</h3>
-                </div>
-                <div class="item-B item-B-08">
-                    <img src="images/image_08.jpg" alt="08" />
-                    <h3>Flex Item 08</h3>
+                <div class="media-text-content">
+                    <h3 class="media-text-title">ダミータイトルダミータイトルダミータイトル</h3>
+                    <p class="media-text-description">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。
+                    </p>
+                    <p class="media-text-nickname">ニックネーム</p>
                 </div>
             </div>
-        </section>
-    </body>
+
+            <!-- 画像と文章ブロック 3 -->
+            <div class="media-text">
+                <div class="media-text-image">
+                    <img src="images/image_3.jpg" width="480" height="320" alt="プログラミングのイメージ" />
+                </div>
+                <div class="media-text-content">
+                    <h3 class="media-text-title">ダミータイトルダミータイトル</h3>
+                    <p class="media-text-description">
+                        この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。
+                    </p>
+                    <p class="media-text-nickname">ニックネーム</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
 </html>
