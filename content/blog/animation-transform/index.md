@@ -13,11 +13,12 @@ samples:
 
 # transform プロパティ
 
-transform は要素を変形させるプロパティ。  
-変形には`移動` `回転` `伸縮` `傾斜` がある。  
-<small>＊アニメーションのみに使われる訳ではないが、アニメーションとの相性が良いのでこの項で説明する。</small>
+`transform`は要素を変形させるプロパティ。  
+変形には`移動` `回転` `伸縮` `傾斜` があります。
 
-## 指定方法
+アニメーションのみに使われる訳ではないですが、アニメーションとの相性が良いのでこの項で説明します。
+
+# 指定方法
 
 ```css
 transform: translate(40px, 10px);
@@ -31,16 +32,16 @@ transform: translate(50%, -20%) rotate(250deg); /*（複数の場合は半角ス
 | **`scale(X,Y)`**     | **伸縮**( 1 を基準にした伸縮度を指定) <br>(例)`transform: scale(2,1.5)`      |
 | **`skew(X,Y)`**      | **傾斜(歪み)** ( 単位は`deg`＊角度)<br>(例)`transform: skew(10deg,20deg)`    |
 
-## サンプル
+# サンプル
 
 <iframe height="550" style="width: 100%;" scrolling="no" title="transform" src="//codepen.io/RsakaiForEducation/embed/RmrZOX/?height=265&theme-id=dark&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/RsakaiForEducation/pen/RmrZOX/'>transform</a> by R Sakai
   (<a href='https://codepen.io/RsakaiForEducation'>@RsakaiForEducation</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-### transform-origin （変形の起点）
+## transform-origin （変形の起点）
 
-`transform` プロパティと合わせて使用して要素内の変形の基点を指定する。  
+`transform` プロパティと合わせて使用して要素内の変形の基点を指定します。  
 `transform-origin: X軸の位置,Y軸の位置`  
 初期値(指定しない場合)は `50% 50%`（要素の中心）
 
@@ -49,19 +50,19 @@ transform: translate(50%, -20%) rotate(250deg); /*（複数の場合は半角ス
   (<a href='https://codepen.io/RsakaiForEducation'>@RsakaiForEducation</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-### 組み合わせ
+## 組み合わせ
 
-複数の値を組み合わせることもできる。
+複数の値を組み合わせることもできます。
 
 <iframe height="400" style="width: 100%;" scrolling="no" title="transform mix" src="//codepen.io/RsakaiForEducation/embed/WBrZGO/?height=265&theme-id=dark&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/RsakaiForEducation/pen/WBrZGO/'>transform mix</a> by R Sakai
   (<a href='https://codepen.io/RsakaiForEducation'>@RsakaiForEducation</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-### 3D transform
+## 3D transform
 
-3D で奥行きを表現することもできる。  
-その場合は transform させたい要素の親要素に `transform-style: preserve-3d;` と `perspective: 奥行き;`を追加する。
+3Dで奥行きを表現することもできます。  
+その場合は transform させたい要素の親要素に `transform-style: preserve-3d;` と `perspective: 奥行き;`を追加する必要があります。
 
 <iframe height="600" style="width: 100%;" scrolling="no" title="transform 3D" src="//codepen.io/RsakaiForEducation/embed/byqjVP/?height=265&theme-id=dark&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/RsakaiForEducation/pen/byqjVP/'>transform 3D</a> by R Sakai
@@ -70,7 +71,7 @@ transform: translate(50%, -20%) rotate(250deg); /*（複数の場合は半角ス
 
 ---
 
-詳しくは以下など。
+詳しくは以下を参考にしてください。
 
 > **transform 参考**  
 > [【CSS3】Transform（変形）関連のまとめ](https://qiita.com/7968/items/eddfeb4b424d7c2d2d34)  
