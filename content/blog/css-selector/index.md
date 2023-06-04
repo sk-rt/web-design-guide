@@ -97,10 +97,12 @@ div.foo {
 
 ## 擬似クラス `:`
 
-単体セレクタでは表現できないものを選択できるよう導入されたもの。
-`:擬似クラス名` で指定できる。
+特定の状態など、単体セレクタでは表現できないものを選択できます。
+主に他のセレクタの後に指定します。 `セレクタ:擬似クラス名`
 
-#### `:hover` カーソルが乗っている要素
+#### `:hover` マウスカーソルが乗っている要素
+
+<small>＊スマホなどのタッチデバイスでは使用できません。</small>
 
 ```css
 .test:hover {
@@ -116,7 +118,10 @@ div.foo {
 }
 ```
 
-#### `:nth-child(n)` n 番目の兄弟要素
+#### `:nth-child(n)` n番目の兄弟要素
+
+`n` には数値や `odd`（奇数） `even` （偶数）などのキーワード、 `4n` `5n-1` などの式も指定できます。  
+【参考】 [:nth-child()](https://developer.mozilla.org/ja/docs/Web/CSS/:nth-child)
 
 ```html
 <ul class="list">
@@ -130,6 +135,14 @@ div.foo {
 /* 3番目のli要素 */
 .list li:nth-child(3) {
   color: #f00;
+}
+/* 奇数番目のli要素 */
+.list li:nth-child(odd) {
+  color: #00f;
+}
+/* 偶数番目のli要素 */
+.list li:nth-child(even) {
+  color: #0f0;
 }
 ```
 

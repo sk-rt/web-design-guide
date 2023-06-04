@@ -1,68 +1,170 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>グリッドレイアウト演習</title>
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <!--
-            1. style.cssファイルを開き、exercises.pngの通りに問題A,Bのスタイルを変更する。
-        -->
-    </head>
-    <body>
-        <h1 class="main-title">
-            グリッドレイアウト演習
-        </h1>
-        <section class="section">
-            <h2 class="section-title">問題A</h2>
-            <div class="container-A">
-                <div class="grid-header bg-p-orange">
-                    <h3>header</h3>
-                </div>
-                <div class="grid-sidebar bg-p-pink">
-                    <h3>sidebar</h3>
-                </div>
-                <div class="grid-main bg-p-blue ">
-                    <h3>main</h3>
-                    <p>
-                        親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。
-                    </p>
-                </div>
-                <div class="grid-footer bg-p-green">
-                    <h3>footer</h3>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>グリッドレイアウト演習</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- NOTE: Google Fontの読み込み @see https://fonts.google.com/ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+    <!--
+    【演習】
+    style.cssファイルを開き、以下のデザインを参考に、レイアウトを完成させてください。
+
+    ● デザイン
+        https://www.figma.com/proto/XNEsUmoHjz3UMi1XR6STjH/web-programing?page-id=0%3A1&type=design&node-id=113-18&viewport=-3527%2C623%2C0.74&scaling=scale-down&starting-point-node-id=113%3A18
+
+    ● レイアウトの指定
+        https://www.figma.com/proto/XNEsUmoHjz3UMi1XR6STjH/web-programing?page-id=0%3A1&type=design&node-id=113-231&viewport=-3527%2C623%2C0.74&scaling=scale-down&starting-point-node-id=113%3A18  
+    -->
+</head>
+
+<body>
+    <!-- ページコンテナ（grid container） -->
+    <div class="page-container">
+        <!-- ヘッダー（grid item） -->
+        <header class="header">
+            <h1 class="header-title">Grid Layout</h1>
+            <p class="header-sub-title sub-title">
+                Header
+            </p>
+        </header>
+        <!-- サイドバー（grid item） -->
+        <nav class="sidebar">
+            <p class="sidebar-title sub-title">Sidebar</p>
+            <div class="sidebar-nav">
+                <a href="#" class="sidebar-nav-item">
+                    Side menu 1
+                </a>
+                <a href="#" class="sidebar-nav-item">
+                    Side menu 2
+                </a>
+                <a href="#" class="sidebar-nav-item">
+                    Side menu 3
+                </a>
+                <a href="#" class="sidebar-nav-item">
+                    Side menu 4
+                </a>
+                <a href="#" class="sidebar-nav-item">
+                    Side menu 5
+                </a>
+            </div>
+        </nav>
+        <!-- メイン（grid item） -->
+        <main class="main">
+            <div class="main-content">
+                <p class="main-sub-tile sub-title">Main</p>
+                <h2 class="main-title">グリッドレイアウトを使って、レイアウトを完成させよう。</h2>
+
+                <!-- カードリスト（grid container） -->
+                <div class="card-list">
+                    <!-- カード1（grid item） -->
+                    <a href="./index.html" class="card">
+                        <div class="card-image">
+                            <img src="images/image_1.jpg" width="288" height="140" alt="" />
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">ダミータイトルダミータイトル</h3>
+                            <p class="card-description">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+                            </p>
+                        </div>
+                    </a>
+                    <!-- カード2（grid item） -->
+                    <a href="./index.html" class="card">
+                        <div class="card-image">
+                            <img src="images/image_2.jpg" width="288" height="140" alt="" />
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">ダミータイトルダミータイトルダミータイトル</h3>
+                            <p class="card-description">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+                            </p>
+                        </div>
+                    </a>
+                    <!-- カード3（grid item） -->
+                    <a href="./index.html" class="card">
+                        <div class="card-image">
+                            <img src="images/image_3.jpg" width="288" height="140" alt="" />
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">ダミータイトル</h3>
+                            <p class="card-description">
+                                この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+                            </p>
+                        </div>
+                    </a>
+                    <!-- カード4（grid item） -->
+                    <a href="./index.html" class="card">
+                        <div class="card-image">
+                            <img src="images/image_4.jpg" width="288" height="140" alt="" />
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">ダミータイトルダミータイトルダミータイトル</h3>
+                            <p class="card-description">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+                            </p>
+                        </div>
+                    </a>
+                    <!-- カード5（grid item） -->
+                    <a href="./index.html" class="card">
+                        <div class="card-image">
+                            <img src="images/image_5.jpg" width="288" height="140" alt="" />
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">ダミータイトル</h3>
+                            <p class="card-description">
+                                この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+                            </p>
+                        </div>
+                    </a>
+                    <!-- カード6（grid item） -->
+                    <a href="./index.html" class="card">
+                        <div class="card-image">
+                            <img src="images/image_6.jpg" width="288" height="140" alt="" />
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">ダミータイトルダミータイトル</h3>
+                            <p class="card-description">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです
+                            </p>
+                        </div>
+                    </a>
+                    <!-- カード7（grid item） -->
+                    <a href="./index.html" class="card">
+                        <div class="card-image">
+                            <img src="images/image_7.jpg" width="288" height="140" alt="" />
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">ダミータイトル</h3>
+                            <p class="card-description">
+                                この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+                            </p>
+                        </div>
+                    </a>
+                    <!-- カード8（grid item） -->
+                    <a href="./index.html" class="card">
+                        <div class="card-image">
+                            <img src="images/image_8.jpg" width="288" height="140" alt="" />
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">ダミータイトルダミータイトルダミータイトル</h3>
+                            <p class="card-description">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+                            </p>
+                        </div>
+                    </a>
                 </div>
             </div>
-        </section>
-        <section class="section">
-            <h2 class="section-title">問題B</h2>
-            <div class="container-B">
-                <div class="tile-01 bg-yellow">
-                    <h3>01</h3>
-                </div>
-                <div class="tile-02 bg-red">
-                    <h3>02</h3>
-                </div>
-                <div class="tile-03 bg-red">
-                    <h3>03</h3>
-                </div>
-                <div class="tile-04 bg-yellow">
-                    <h3>04</h3>
-                </div>
-                <div class="tile-05 bg-yellow">
-                    <h3>05</h3>
-                </div>
-                <div class="tile-06 bg-red">
-                    <h3>06</h3>
-                </div>
-                <div class="tile-07 bg-red">
-                    <h3>07</h3>
-                </div>
-                <div class="tile-08 bg-yellow">
-                    <h3>08</h3>
-                </div>
-            </div>
-        </section>
-    </body>
+        </main>
+        <!-- フッター（grid item） -->
+        <footer class="footer">
+            <p class="footer-sub-title sub-title">Footer</p>
+            <small>© Ryuta Sakai</small>
+        </footer>
+    </div>
+</body>
+
 </html>
