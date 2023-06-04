@@ -1,70 +1,214 @@
 @charset "UTF-8";
 
+/*  
+    【演習 1】
+    ヘッダー/サイドバー/メイン/フッターがそれぞれデザイン通りになる様にレイアウトを完成させましょう
+     https://www.figma.com/proto/XNEsUmoHjz3UMi1XR6STjH/web-programing?page-id=0%3A1&type=design&node-id=113-231&viewport=-3527%2C623%2C0.74&scaling=scale-down&starting-point-node-id=113%3A18
+
+    1. `.page-container` をGridコンテナーとし、各プロパティを記述しましょう。
+      
+    2. グリッドアイテム、 `.header` `.sidebar` `.main` `.footer` に `gird-column`,`grid-row` の指定をしましょう。
+
+    ----------------
+
+    【演習 2】
+    カードリストがデザイン通りになる様にレイアウトを完成させましょう
+     https://www.figma.com/proto/XNEsUmoHjz3UMi1XR6STjH/web-programing?page-id=0%3A1&type=design&node-id=113-231&viewport=-3527%2C623%2C0.74&scaling=scale-down&starting-point-node-id=113%3A18
+
+    1. `.card-list` をGridコンテナーとし、各プロパティを記述しましょう。
+        カードの数が増えても自動で行が追加される様に、grid-template-rowsは指定せず、`grid-auto-rows: auto;` を指定しましょう。
+        ＊グリッドアイテムへの指定は不要です。
+
+ */
+
+
+:root {
+    /* 
+        NOTE: `--{変数名}` でstyleの値を変数として定義すると、
+        var(--{変数名}) で変数を参照できます。
+        @see https://developer.mozilla.org/ja/docs/Web/CSS/Using_CSS_custom_properties
+     */
+    --color-base: rgba(27, 3, 38, 1);
+    --color-base-half: rgba(27, 3, 38, 0.6);
+    --color-base-dark:rgba(19, 4, 27, 1);
+    --color-text: rgba(247, 247, 247, 1);
+    --color-text-half: rgba(247, 247, 247, 0.6);
+    --color-border: rgba(79, 58, 89, 1);
+}
 body {
     font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans', 'ヒラギノ角ゴシック', Roboto,
         sans-serif;
-    line-height: 1.9;
+    line-height: 1.7;
     font-size: 16px;
-    color: #222;
-    background-color: #ffffff;
+    color: var(--color-text);
+    background-color: var(--color-base);
 }
 img {
     max-width: 100%;
     height: auto;
     vertical-align: bottom;
 }
-.main-title {
-    padding: 40px;
-    margin: 0;
-    text-align: center;
+
+.sub-title {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-text-half);
+    font-weight: 600;
+    letter-spacing: 0.05em;
 }
-.section {
-    margin-bottom: 3rem;
+/* ==================================
+    ページレイアウト
+*/
+
+.page-container {
+  /* 以下に問題1-1のstyleを記述 */
 }
-.section-title {
-    margin-bottom: 1rem;
-    padding: 0.3rem 1rem;
-}
-.container-A,
-.container-B {
-    margin: 0 auto;
-}
-.container-A > div {
-    padding: 10px;
-}
-.container-A h3 {
-    text-align: center;
-}
-.bg-red,
-.bg-yellow {
+
+/* ==================================
+    Header
+*/
+.header {
+    border-bottom: 1px solid var(--color-border);
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-}
-.bg-red {
-    background-color: #ff0000;
-}
-.bg-yellow {
-    background-color: #ffff00;
-}
-.bg-p-orange {
-    background-color: #ffb14d;
-}
-.bg-p-pink {
-    background-color: #ff859c;
-}
-.bg-p-blue {
-    background-color: #a1e3ed;
-}
-.bg-p-green {
-    background-color: #cbed66;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 60px;
+    /* 以下に問題1-2のstyleを記述 */
 }
 
-/* ===================================
-   以下に 問題A　のスタイルを記入
- */
+.header-title {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
 
-/* ===================================
-   以下に 問題B のスタイルを記入
- */
+/* ==================================
+    Sidebar
+*/
+.sidebar {
+    border-right: 1px solid var(--color-border);
+    background-color: var(--color-base-dark);
+    padding: 10px 12px;
+     /* 以下に問題1-2のstyleを記述 */
+}
+.sidebar-title {
+    margin: 0;
+    margin-bottom: 1em;
+}
+.sidebar-nav {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 4px;
+}
+
+.sidebar-nav-item {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.4;
+    padding-top: 0.8em;
+    padding-right: 0.8em;
+    padding-left: 1.5em;
+    padding-bottom: 0.8em;
+    border-radius: 2em;
+    background-color: rgba(247, 247, 247, 0.08);
+}
+.sidebar-nav-item:hover {
+    background-color: rgba(247, 247, 247, 0.15);
+}
+.sidebar-nav-item::after {
+    content: "";
+    background-image: url("../images/icon-chevron.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+/* ==================================
+    Footer
+*/
+.footer {
+    border-top: 1px solid var(--color-border);
+    padding: 6px 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-text-half);
+    min-height: 50px;
+    /* 以下に問題1-2のstyleを記述 */
+   
+}
+footer small {
+    font-size: 11px;
+    font-family: 'Poppins', sans-serif;
+}
+/* ==================================
+    Main
+*/
+.main {
+    padding: 40px 10%;
+    /* 以下に問題1-2のstyleを記述 */
+}
+.main-content {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-title {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+/* ==================================
+    カードリスト
+*/
+.card-list {
+     /* 以下に問題2のstyleを記述 */
+}
+.card {
+    color: var(--color-base);
+    background-color: var(--color-text);
+    border: 2px solid var(--color-border);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.card:hover {
+    opacity: 0.8;
+}
+.card-image {
+    height: 140px;
+}
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-content {
+    padding: 12px;
+    padding-bottom: 20px;
+   
+}
+.card-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.card-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-base-half);
+}
