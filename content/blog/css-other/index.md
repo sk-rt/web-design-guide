@@ -15,30 +15,29 @@ samples: []
 
 # 透明度(opacity)
 
-- opacity は要素の**_透明度_**を設定できるプロパティ。
-- 初期値は `1` で、`0〜1` の値を設定できる。0 に設定すると完全に透明になる。
-- 記法は `opacity: 透明度`
-- アニメーション可
+`opacity`は要素の **透明度** を設定できるプロパティです。  
+初期値は `1` で、`0〜1` の値を設定できます。`0` に設定すると完全に透明になります。
+
+記法は `opacity: 透明度`
 
 ```css
-.op {
+.my-element {
   opacity: 0.3;
 }
 ```
 
 # 影(box-shadow / text-shadow)
 
-### box-shadow
+## box-shadow
 
-- **_要素に影をつける_**プロパティ。
-- 記法は `box-shadow: [X軸の位置][y軸の位置] [ぼかしサイズ] [影の広がり] [影の色][内側 (inset)]`
-- X 軸は右、Y 軸は下への影の位置。マイナスの値も指定可能。
-- [ぼかしサイズ]、[影の広がり]、[影の色]は省略可能。
-- 内側の影にするときは最後に `inset` をつける
-- アニメーション可
+**要素に影をつける**プロパティです。  
+記法は `box-shadow: [X軸の位置][y軸の位置] [ぼかしサイズ] [影の広がり] [影の色][内側 (inset)]`  
+X 軸は右、Y 軸は下への影の位置。マイナスの値も指定可能です。  
+[ぼかしサイズ]、[影の広がり]、[影の色]は省略可能。  
+最後に `inset` をつけると内側の影になります。
 
 ```css
-.box-shadow {
+.my-element {
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
 }
 ```
@@ -48,14 +47,13 @@ samples: []
   (<a href='https://codepen.io/RsakaiForEducation'>@RsakaiForEducation</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-### text-shadow
+## text-shadow
 
-- **_テキストに影をつける_**プロパティ。
-- 基本的に `box-shadow` と同じだが、内側の影と影の広がりは指定できない。
-- アニメーション可
+**テキストに影をつける**プロパティ。  
+基本的に `box-shadow` と同じですが、内側の影と影の広がりは指定できません。
 
 ```css
-.text-shadow {
+.my-element {
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
 }
 ```
@@ -66,13 +64,15 @@ samples: []
 
 # グラデーション(linear-gradient)
 
-- **_背景にグラデーション_**を設定できる。
-- 基本的な記法は `background-image: linear-gradient(角度, 開始色, 終了色);`
-- 円形のグラデーションは`radial-gradient()`
-- **_アニメーション不可_**
+`linear-gradient()` や `radial-gradient()` を使って **背景にグラデーション** を指定できます。
+
+線形のグラデーションは `background-image: linear-gradient(角度, 開始色, 終了色);`、  
+円形のグラデーションは`background-image: radial-gradient(中心色, 末端色);` の様に記述します。
+
+※ `background-image` はtransitionなどでアニメーションすることはできません。
 
 ```css
-.gradient {
+.my-element {
   background-image: linear-gradient(45deg, #ff0000, #00ffff);
 }
 ```
@@ -88,14 +88,15 @@ samples: []
 
 # 効果(filter)
 
-- 要素にぼかし、カラー変換などの効果を与えることができる。
-- 画像(img や background)にも適用できる。
-- 代表的な値(`0`には好きな値を入れる)
-  - `blur( 0px )` ぼかし
-  - `brightness( 0% )` 明るさ
-  - `saturate( 0% )` 彩度
-  - `hue-rotate( 0deg )` 色相回転
-- アニメーション可
+要素にぼかし、カラー変換などの効果を与えることができるプロパティです。  
+画像にも適用できます。
+
+#### 代表的な値
+
+- `blur( 0px )` ぼかし
+- `brightness( 0% )` 明るさ
+- `saturate( 0% )` 彩度
+- `hue-rotate( 0deg )` 色相回転
 
 ```css
 .filter-blur {
