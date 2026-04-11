@@ -5,10 +5,7 @@
   "version": "0.1.0",
   "author": "R Sakai",
   "browserslist": [
-    "last 2 versions",
-    "ie >= 10",
-    "Android >= 4.4",
-    "ios_saf >= 8"
+    "last 2 versions"
   ],
   "dependencies": {
     "babel-loader": "^8.2.4",
@@ -74,5 +71,6 @@
     "eslint-plugin-standard": "^4.1.0",
     "prettier": "^2.8.7",
     "prettier-plugin-md-nocjsp": "^1.5.1"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
