@@ -7,6 +7,9 @@
   "browserslist": [
     "last 2 versions"
   ],
+  "engines": {
+    "node": "^20"
+  },
   "dependencies": {
     "babel-loader": "^8.2.4",
     "bulma": "^0.9.3",
