@@ -121,13 +121,26 @@ HTMLをWebページとして作成する際は、以下の要素が必要です�
 > 1. 新いファイルを作成し、`index.html` という名前で保存
 > 1. 作成したHTMLに基本要素を記述し、bodyタグ内に適当なテキストを入力
 > 1. 作成したHTMLをブラウザで開く
-> 1. ブラウザ上にindex.htmlに入力した内容が表示されているか確認
+> 1. ブラウザ上に `index.html` に入力した内容が表示されているか確認
 
 > #### ローカルサーバー
 >
-> ローカル（ここでは手元のPCの事です）でのWebページの確認は上記の様に直接ブラウザでHTMLファイルを開くこともできますが、**ローカルサーバー**を立ち上げる、という方法が一般的です。  
-> ローカルでサーバーを立ち上げる方法は様々ですが、Visual Studio Codeの [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) プラグインを使うと簡単にサーバーの立ち上げが行えます。  
-> 参考: [導入方法](https://monomonotech.jp/kurage/memo/m220525_vscode_liveserver.html)
+> ローカル（ここでは手元のPCの事です）でのWebページの確認は上記の様に直接ブラウザでHTMLファイルを開くこともできますが、**ローカルサーバー**を立ち上げて確認する方が確実です。  
+> ローカルでサーバーの機能や立ち上げる方法は様々ですが、HTMLのみの確認の場合は以下の方法が比較的簡単です。
+>
+> 1. Visual Studio Codeの [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) プラグインを使う。  
+>    ＊ ただし、脆弱性あり。機密情報をコードやフォルダの中に入れない様にしてください。　  
+>    参考: [導入方法](https://monomonotech.jp/kurage/memo/m220525_vscode_liveserver.html)
+>
+> 2. Pythonコマンドを利用する。
+>    index.htmlのあるフォルダで以下コマンドを打ちます。
+>
+>    ```sh
+>    python3 -m http.server 8000
+>
+>    ```
+>
+>    http://localhost:8000 でアクセスできます。 不要になれば `Ctrl + C` でストップできます。
 
 > #### 参照
 >
